@@ -272,73 +272,69 @@ Many of the following operators and expressions can also be overloaded for
 other types using traits in `std::ops` or `std::cmp`. These traits also
 exist in `core::ops` and `core::cmp` with the same names.
 
-[block expressions]:    expressions/block-expr.html
-[call expressions]:     expressions/call-expr.html
-[closure expressions]:  expressions/closure-expr.html
-[enum variant]:         expressions/enum-variant-expr.html
-[field]:                expressions/field-expr.html
-[grouped]:              expressions/grouped-expr.html
-[literals]:             expressions/literal-expr.html
-[match]:                expressions/match-expr.html
-[method-call]:          expressions/method-call-expr.html
-[paths]:                expressions/path-expr.html
-[range expressions]:    expressions/range-expr.html
-[struct]:               expressions/struct-expr.html
-[tuple expressions]:    expressions/tuple-expr.html
-
-[array expressions]:    expressions/array-expr.html
-[array indexing]:       expressions/array-expr.html#array-and-slice-indexing-expressions
-
-[arithmetic, logical]:  expressions/operator-expr.html#arithmetic-and-logical-binary-operators
-[assign]:               expressions/operator-expr.html#assignment-expressions
-[borrow]:               expressions/operator-expr.html#borrow-operators
-[cast]:                 expressions/operator-expr.html#type-cast-expressions
-[comparison]:           expressions/operator-expr.html#comparison-operators
-[compound assignment]:  expressions/operator-expr.html#compound-assignment-expressions
-[dereferences]:         expressions/operator-expr.html#the-dereference-operator
-[dereferencing]:        expressions/operator-expr.html#the-dereference-operator
-[dereference operator]: expressions/operator-expr.html#the-dereference-operator
-[lazy boolean]:         expressions/operator-expr.html#lazy-boolean-operators
-[negation]:             expressions/operator-expr.html#negation-operators
-[overflow]:             expressions/operator-expr.html#overflow
-
-[functions]: items/functions.html
-[constants]: items/constant-items.html
-[destructors]:          destructors.html
-[interior mutability]:  interior-mutability.html
-[`Box<T>`]:             ../std/boxed/struct.Box.html
-[`Copy`]:               special-types-and-traits.html#copy
-[`Drop`]:               special-types-and-traits.html#drop
-[`Sized`]:              special-types-and-traits.html#sized
-[implicit borrow]:      #implicit-borrows
-[implicitly mutably borrowed]: #implicit-borrows
-[let]:                  statements.html#let-statements
 [Mutable `static` items]: items/static-items.html#mutable-statics
-[slice]:                types.html#array-and-slice-types
-[static variables]:     items/static-items.html
-[Temporary values]:     #temporary-lifetimes
-[Variables]:            variables.html
-
-[_ArrayExpression_]:              expressions/array-expr.html
-[_BlockExpression_]:              expressions/block-expr.html
-[_BreakExpression_]:              expressions/loop-expr.html#break-expressions
-[_CallExpression_]:               expressions/call-expr.html
-[_ClosureExpression_]:            expressions/closure-expr.html
-[_ContinueExpression_]:           expressions/loop-expr.html#continue-expressions
+[Temporary values]: #temporary-lifetimes
+[Variables]: variables.html
+[_ArrayExpression_]: expressions/array-expr.html
+[_BlockExpression_]: expressions/block-expr.html
+[_BreakExpression_]: expressions/loop-expr.html#break-expressions
+[_CallExpression_]: expressions/call-expr.html
+[_ClosureExpression_]: expressions/closure-expr.html
+[_ContinueExpression_]: expressions/loop-expr.html#continue-expressions
 [_EnumerationVariantExpression_]: expressions/enum-variant-expr.html
-[_FieldExpression_]:              expressions/field-expr.html
-[_GroupedExpression_]:            expressions/grouped-expr.html
-[_IfExpression_]:                 expressions/if-expr.html#if-expressions
-[_IfLetExpression_]:              expressions/if-expr.html#if-let-expressions
-[_IndexExpression_]:              expressions/array-expr.html#array-and-slice-indexing-expressions
-[_LiteralExpression_]:            expressions/literal-expr.html
-[_LoopExpression_]:               expressions/loop-expr.html
-[_MatchExpression_]:              expressions/match-expr.html
-[_MethodCallExpression_]:         expressions/method-call-expr.html
-[_OperatorExpression_]:           expressions/operator-expr.html
-[_PathExpression_]:               expressions/path-expr.html
-[_RangeExpression_]:              expressions/range-expr.html
-[_ReturnExpression_]:             expressions/return-expr.html
-[_StructExpression_]:             expressions/struct-expr.html
-[_TupleExpression_]:              expressions/tuple-expr.html
-[_TupleIndexingExpression_]:      expressions/tuple-expr.html#tuple-indexing-expressions
+[_FieldExpression_]: expressions/field-expr.html
+[_GroupedExpression_]: expressions/grouped-expr.html
+[_IfExpression_]: expressions/if-expr.html#if-expressions
+[_IfLetExpression_]: expressions/if-expr.html#if-let-expressions
+[_IndexExpression_]: expressions/array-expr.html#array-and-slice-indexing-expressions
+[_LiteralExpression_]: expressions/literal-expr.html
+[_LoopExpression_]: expressions/loop-expr.html
+[_MatchExpression_]: expressions/match-expr.html
+[_MethodCallExpression_]: expressions/method-call-expr.html
+[_OperatorExpression_]: expressions/operator-expr.html
+[_PathExpression_]: expressions/path-expr.html
+[_RangeExpression_]: expressions/range-expr.html
+[_ReturnExpression_]: expressions/return-expr.html
+[_StructExpression_]: expressions/struct-expr.html
+[_TupleExpression_]: expressions/tuple-expr.html
+[_TupleIndexingExpression_]: expressions/tuple-expr.html#tuple-indexing-expressions
+[`Box<T>`]: ../std/boxed/struct.Box.html
+[`Copy`]: special-types-and-traits.html#copy
+[`Drop`]: special-types-and-traits.html#drop
+[`Sized`]: special-types-and-traits.html#sized
+[arithmetic, logical]: expressions/operator-expr.html#arithmetic-and-logical-binary-operators
+[array expressions]: expressions/array-expr.html
+[array indexing]: expressions/array-expr.html#array-and-slice-indexing-expressions
+[assign]: expressions/operator-expr.html#assignment-expressions
+[block expressions]: expressions/block-expr.html
+[borrow]: expressions/operator-expr.html#borrow-operators
+[call expressions]: expressions/call-expr.html
+[cast]: expressions/operator-expr.html#type-cast-expressions
+[closure expressions]: expressions/closure-expr.html
+[comparison]: expressions/operator-expr.html#comparison-operators
+[compound assignment]: expressions/operator-expr.html#compound-assignment-expressions
+[constants]: items/constant-items.html
+[dereference operator]: expressions/operator-expr.html#the-dereference-operator
+[dereferences]: expressions/operator-expr.html#the-dereference-operator
+[dereferencing]: expressions/operator-expr.html#the-dereference-operator
+[destructors]: destructors.html
+[enum variant]: expressions/enum-variant-expr.html
+[field]: expressions/field-expr.html
+[functions]: items/functions.html
+[grouped]: expressions/grouped-expr.html
+[implicit borrow]: #implicit-borrows
+[implicitly mutably borrowed]: #implicit-borrows
+[interior mutability]: interior-mutability.html
+[lazy boolean]: expressions/operator-expr.html#lazy-boolean-operators
+[let]: statements.html#let-statements
+[literals]: expressions/literal-expr.html
+[match]: expressions/match-expr.html
+[method-call]: expressions/method-call-expr.html
+[negation]: expressions/operator-expr.html#negation-operators
+[overflow]: expressions/operator-expr.html#overflow
+[paths]: expressions/path-expr.html
+[range expressions]: expressions/range-expr.html
+[slice]: types.html#array-and-slice-types
+[static variables]: items/static-items.html
+[struct]: expressions/struct-expr.html
+[tuple expressions]: expressions/tuple-expr.html

@@ -94,16 +94,16 @@ if true {
 Statements accept [outer attributes]. The attributes that have meaning on a
 statement are [`cfg`], and [the lint check attributes].
 
-[block]: expressions/block-expr.html
-[expression]: expressions.html
-[function]: items/functions.html
-[item]: items.html
-[module]: items/modules.html
-[canonical path]: paths.html#canonical-paths
-[implementations]: items/implementations.html
-[variables]: variables.html
-[outer attributes]: attributes.html
 [`cfg`]: attributes.html#conditional-compilation
-[the lint check attributes]: attributes.html#lint-check-attributes
+[block]: expressions/block-expr.html
+[canonical path]: paths.html#canonical-paths
 [declaration statements]: #declaration-statements
 [expression statements]: #expression-statements
+[expression]: expressions.html
+[function]: items/functions.html
+[implementations]: items/implementations.html
+[item]: items.html
+[module]: items/modules.html
+[outer attributes]: attributes.html
+[the lint check attributes]: attributes.html#lint-check-attributes
+[variables]: variables.html

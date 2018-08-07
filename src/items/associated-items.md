@@ -264,21 +264,21 @@ fn main() {
 }
 ```
 
+[associated constants]: #associated-constants
+[associated functions]: #associated-functions-and-methods
+[associated types]: #associated-types
+[block]: ../expressions/block-expr.html
+[constant item]: constant-items.html
+[constants]: constant-items.html
+[function item]: ../types.html#function-item-types
+[functions]: functions.html
+[identifier]: ../identifiers.html
+[implementations]: implementations.html
+[inherent implementations]: implementations.html#inherent-implementations
+[method call operator]: ../expressions/method-call-expr.html
+[path]: ../paths.html
+[trait object]: ../types.html#trait-objects
 [trait]: traits.html
 [traits]: traits.html
 [type aliases]: type-aliases.html
-[inherent implementations]: implementations.html#inherent-implementations
-[identifier]: ../identifiers.html
-[trait object]: ../types.html#trait-objects
-[implementations]: implementations.html
 [type]: ../types.html
-[constants]: constant-items.html
-[constant item]: constant-items.html
-[functions]: functions.html
-[function item]: ../types.html#function-item-types
-[method call operator]: ../expressions/method-call-expr.html
-[block]: ../expressions/block-expr.html
-[path]: ../paths.html
-[associated functions]: #associated-functions-and-methods
-[associated types]: #associated-types
-[associated constants]: #associated-constants

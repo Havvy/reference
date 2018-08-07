@@ -165,10 +165,10 @@ mod without { // ::without
 # fn main() {}
 ```
 
-[item]: items.html
-[variable]: variables.html
-[identifiers]: identifiers.html
 [expression]: expressions.html
+[identifiers]: identifiers.html
 [implementations]: items/implementations.html
+[item]: items.html
 [modules]: items/modules.html
 [use declarations]: items/use-declarations.html
+[variable]: variables.html

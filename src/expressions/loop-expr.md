@@ -203,20 +203,20 @@ and the `loop` must have a type compatible with each `break` expression.
 expression `()`.
 
 [IDENTIFIER]: ../identifiers.html
-[_Expression_]: ../expressions.html
-[_BlockExpression_]: block-expr.html
 [LIFETIME_OR_LABEL]: ../tokens.html#lifetimes-and-loop-labels
-[_LoopLabel_]: #loop-labels
+[_BlockExpression_]: block-expr.html
+[_Expression_]: ../expressions.html
 [_InfiniteLoopExpression_]: #infinite-loops
+[_IteratorLoopExpression_]: #iterator-loops
+[_LoopLabel_]: #loop-labels
 [_PredicateLoopExpression_]: #predicate-loops
 [_PredicatePatternLoopExpression_]: #predicate-pattern-loops
-[_IteratorLoopExpression_]: #iterator-loops
-[`loop` expression]: #infinite-loops
-[`while` expression]: #predicate-loops
-[`while let` expression`]: #predicate-pattern-loops
-[`for` expression]: #iterator-loops
+[`!`]: ../types.html#never-type
 [`break` expressions]: #break-expressions
 [`continue` expressions]: #continue-expressions
+[`for` expression]: #iterator-loops
+[`loop` expression]: #infinite-loops
+[`while let` expression`]: #predicate-pattern-loops
+[`while` expression]: #predicate-loops
 [labels]: #loop-labels
 [loop values]: #break-and-loop-values
-[`!`]: ../types.html#never-type

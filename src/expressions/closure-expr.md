@@ -59,13 +59,13 @@ let word = "konnichiwa".to_owned();
 ten_times(move |j| println!("{}, {}", word, j));
 ```
 
-[block]: block-expr.html
-[function definitions]: ../items/functions.html
-[_Expression_]: ../expressions.html
 [_BlockExpression_]: block-expr.html
-[_TypeNoBounds_]: ../types.html
+[_Expression_]: ../expressions.html
 [_FunctionParameters_]: ../items/functions.html
-[infers]: ../types.html#capture-modes
-[closure traits]: ../types.html#call-traits-and-coercions
+[_TypeNoBounds_]: ../types.html
 [`Send`]: ../special-types-and-traits.html#send
 [`Sync`]: ../special-types-and-traits.html#sync
+[block]: block-expr.html
+[closure traits]: ../types.html#call-traits-and-coercions
+[function definitions]: ../items/functions.html
+[infers]: ../types.html#capture-modes

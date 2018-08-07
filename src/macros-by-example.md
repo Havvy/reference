@@ -76,14 +76,14 @@ Rust syntax is restricted in two ways:
    requiring a distinctive token in front can solve the problem.
 
 [RFC 550]: https://github.com/rust-lang/rfcs/blob/master/text/0550-macro-future-proofing.md
-[item]: items.html
+[attribute]: attributes.html
 [block]: expressions/block-expr.html
-[statement]: statements.html
-[pattern]: expressions/match-expr.html
 [expression]: expressions.html
-[type]: types.html
 [identifier]: identifiers.html
+[item]: items.html
 [keyword]: keywords.html
 [path]: paths.html
+[pattern]: expressions/match-expr.html
+[statement]: statements.html
 [token]: tokens.html
-[attribute]: attributes.html
+[type]: types.html

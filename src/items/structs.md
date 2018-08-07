@@ -75,12 +75,12 @@ let c = [Cookie, Cookie {}, Cookie, Cookie {}];
 The precise memory layout of a struct is not specified. One can specify a
 particular layout using the [`repr` attribute].
 
-[`repr` attribute]: ../attributes.html#ffi-attributes
-[_OuterAttribute_]: ../attributes.html
 [IDENTIFIER]: ../identifiers.html
 [_Generics_]: generics.html
-[_WhereClause_]: items/generics.html#where-clauses
-[_Visibility_]: ../visibility-and-privacy.html
+[_OuterAttribute_]: ../attributes.html
 [_Type_]: ../types.html
+[_Visibility_]: ../visibility-and-privacy.html
+[_WhereClause_]: items/generics.html#where-clauses
+[`repr` attribute]: ../attributes.html#ffi-attributes
 [struct type]: ../types.html#struct-types
 [tuple type]: ../types.html#tuple-types

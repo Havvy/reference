@@ -130,11 +130,11 @@ fn test_only() {
 > Note: Except for lints, it is idiomatic to only use outer attributes on
 > function items.
 
-[external blocks]: external-blocks.html
-[path]: ../paths.html
-[block]: ../expressions/block-expr.html
-[variables]: ../variables.html
-[type]: ../types.html
 [*function item type*]: ../types.html#function-item-types
 [Trait]: traits.html
 [attributes]: ../attributes.html
+[block]: ../expressions/block-expr.html
+[external blocks]: external-blocks.html
+[path]: ../paths.html
+[type]: ../types.html
+[variables]: ../variables.html

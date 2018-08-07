@@ -76,18 +76,18 @@ Not running destructors in Rust is safe even if it has a type that isn't
 `'static`. [`std::mem::ManuallyDrop`] provides a wrapper to prevent a
 variable or field from being dropped automatically.
 
-[initialized]: glossary.html#initialized
-[variable]: variables.html
-[temporary]: expressions.html#temporary-lifetimes
 [Assignment]: expressions/operator-expr.html#assignment-expressions
-[`std::ops::Drop::drop`]: ../std/ops/trait.Drop.html
 [RFC 1857]: https://github.com/rust-lang/rfcs/blob/master/text/1857-stabilize-drop-order.md
-[struct]: types.html#struct-types
-[tuple]: types.html#tuple-types
-[enum variant]: types.html#enumerated-types
+[Trait objects]: types.html#trait-objects
+[`std::mem::ManuallyDrop`]: ../std/mem/struct.ManuallyDrop.html
+[`std::mem::forget`]: ../std/mem/fn.forget.html
+[`std::ops::Drop::drop`]: ../std/ops/trait.Drop.html
+[`std::ptr::drop_in_place`]: ../std/ptr/fn.drop_in_place.html
 [array]: types.html#array-and-slice-types
 [closure]: types.html#closure-types
-[Trait objects]: types.html#trait-objects
-[`std::ptr::drop_in_place`]: ../std/ptr/fn.drop_in_place.html
-[`std::mem::forget`]: ../std/mem/fn.forget.html
-[`std::mem::ManuallyDrop`]: ../std/mem/struct.ManuallyDrop.html
+[enum variant]: types.html#enumerated-types
+[initialized]: glossary.html#initialized
+[struct]: types.html#struct-types
+[temporary]: expressions.html#temporary-lifetimes
+[tuple]: types.html#tuple-types
+[variable]: variables.html

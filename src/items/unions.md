@@ -145,8 +145,8 @@ checking, etc etc etc).
 More detailed specification for unions, including unstable bits, can be found
 in [RFC 1897 "Unions v1.2"].
 
-[RFC 1897 "Unions v1.2"]: https://github.com/rust-lang/rfcs/pull/1897
 [IDENTIFIER]: ../identifiers.html
+[RFC 1897 "Unions v1.2"]: https://github.com/rust-lang/rfcs/pull/1897
 [_Generics_]: html
-[_WhereClause_]: html#where-clauses
 [_StructFields_]: html
+[_WhereClause_]: html#where-clauses

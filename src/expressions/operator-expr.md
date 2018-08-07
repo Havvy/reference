@@ -438,26 +438,24 @@ x += 4;
 assert_eq!(x, 14);
 ```
 
-[place expression]: ../expressions.html#place-expressions-and-value-expressions
-[value expression]: ../expressions.html#place-expressions-and-value-expressions
-[temporary value]: ../expressions.html#temporary-lifetimes
-[float-int]: https://github.com/rust-lang/rust/issues/10184
-[float-float]: https://github.com/rust-lang/rust/issues/15536
-[`unit` type]: ../types.html#tuple-types
+[_ArithmeticOrLogicalExpression_]: #arithmetic-and-logical-binary-operators
+[_AssignmentExpression_]: #assignment-expressions
 [_BorrowExpression_]: #borrow-operators
+[_ComparisonExpression_]: #comparison-operators
+[_CompoundAssignmentExpression_]: #compound-assignment-expressions
 [_DereferenceExpression_]: #the-dereference-operator
 [_ErrorPropagationExpression_]: #the-question-mark-operator
-[_NegationExpression_]: #negation-operators
-[_ArithmeticOrLogicalExpression_]: #arithmetic-and-logical-binary-operators
-[_ComparisonExpression_]: #comparison-operators
-[_LazyBooleanExpression_]: #lazy-boolean-operators
-[_TypeCastExpression_]: #type-cast-expressions
-[_AssignmentExpression_]: #assignment-expressions
-[_CompoundAssignmentExpression_]: #compound-assignment-expressions
 [_Expression_]: ../expressions.html
+[_LazyBooleanExpression_]: #lazy-boolean-operators
+[_NegationExpression_]: #negation-operators
 [_PathInExpression_]: ../paths.html
-[lazy operators]: #lazy-boolean-operators
+[_TypeCastExpression_]: #type-cast-expressions
+[`unit` type]: ../types.html#tuple-types
 [drops]: ../destructors.html
 [either copies or moves]: ../expressions.html#moved-and-copied-types
-[float-int]: https://github.com/rust-lang/rust/issues/10184
 [float-float]: https://github.com/rust-lang/rust/issues/15536
+[float-int]: https://github.com/rust-lang/rust/issues/10184
+[lazy operators]: #lazy-boolean-operators
+[place expression]: ../expressions.html#place-expressions-and-value-expressions
+[temporary value]: ../expressions.html#temporary-lifetimes
+[value expression]: ../expressions.html#place-expressions-and-value-expressions

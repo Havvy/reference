@@ -302,13 +302,13 @@ Like all ways to create undefined behavior in safe Rust, this is a bug.
 
 </div>
 
-[`align_of_val`]: ../std/mem/fn.align_of_val.html
-[`size_of_val`]: ../std/mem/fn.size_of_val.html
-[`align_of`]: ../std/mem/fn.align_of.html
-[`size_of`]: ../std/mem/fn.size_of.html
-[`Sized`]: ../std/marker/trait.Sized.html
-[dynamically sized types]: dynamically-sized-types.html
-[C-like enumerations]:  items/enumerations.html#custom-discriminant-values-for-field-less-enumerations
-[zero-variant enumerations]: items/enumerations.html#zero-variant-enums
-[undefined behavior]: behavior-considered-undefined.html
 [27060]: https://github.com/rust-lang/rust/issues/27060
+[C-like enumerations]:  items/enumerations.html#custom-discriminant-values-for-field-less-enumerations
+[`Sized`]: ../std/marker/trait.Sized.html
+[`align_of_val`]: ../std/mem/fn.align_of_val.html
+[`align_of`]: ../std/mem/fn.align_of.html
+[`size_of_val`]: ../std/mem/fn.size_of_val.html
+[`size_of`]: ../std/mem/fn.size_of.html
+[dynamically sized types]: dynamically-sized-types.html
+[undefined behavior]: behavior-considered-undefined.html
+[zero-variant enumerations]: items/enumerations.html#zero-variant-enums

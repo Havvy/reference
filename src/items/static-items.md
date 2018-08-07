@@ -68,10 +68,10 @@ following are true:
 * The single-address property of statics is required.
 * Interior mutability is required.
 
-[constant]: ../items/constant-items.html
+[IDENTIFIER]: ../identifiers.html
+[_Expression_]: ../expressions.html
+[_Type_]: ../types.html
 [`drop`]: ../destructors.html
 [constant expression]: ../expressions.html#constant-expressions
+[constant]: ../items/constant-items.html
 [interior mutable]: ../interior-mutability.html
-[IDENTIFIER]: ../identifiers.html
-[_Type_]: ../types.html
-[_Expression_]: ../expressions.html

@@ -506,6 +506,7 @@ Lifetime parameters and [loop labels] use LIFETIME_OR_LABEL tokens. Any
 LIFETIME_TOKEN will be accepted by the lexer, and for example, can be used in
 macros.
 
+<<<<<<< HEAD
 ## Punctuation
 
 Punctuation symbol tokens are listed here for completeness. Their individual
@@ -572,42 +573,40 @@ them are referred to as "token trees" in [macros].  The three types of brackets 
 | `(` `)` | Parentheses     |
 
 
+["Machine Types"]: types.html#machine-types
 [Operator expressions]: expressions/operator-expr.html
-[unary operators]: expressions/operator-expr.html#borrow-operators
+[arith]: expressions/operator-expr.html#arithmetic-and-logical-binary-operators
+[array types]: types.html#array-and-slice-types
+[assignment]: expressions/operator-expr.html#assignment-expressions
+[attributes]: attributes.html
 [binary operators]: expressions/operator-expr.html#arithmetic-and-logical-binary-operators
-[tokens]: #tokens
-[keywords]: keywords.html
+[borrow]: expressions/operator-expr.html#borrow-operators
+[closures]: expressions/closure-expr.html
+[comparison]: expressions/operator-expr.html#comparison-operators
+[compound]: expressions/operator-expr.html#compound-assignment-expressions
+[constant items]: items/constant-items.html
+[dereference]: expressions/operator-expr.html#the-dereference-operator
+[extern]: items/external-blocks.html
+[field]: expressions/field-expr.html
+[functions]: items/functions.html
+[generics]: items/generics.html
 [identifier]: identifiers.html
-[tuples]: types.html#tuple-types
+[keywords]: keywords.html
+[lazy-bool]: expressions/operator-expr.html#lazy-boolean-operators
+[loop labels]: expressions/loop-expr.html
+[macros]: macros-by-example.html
+[match]: expressions/match-expr.html
+[never type]: types.html#never-type
+[paths]: paths.html
+[question]: expressions/operator-expr.html#the-question-mark-operator
+[range]: expressions/range-expr.html
+[raw pointers]: types.html#raw-pointers-const-and-mut
+[references]: types.html#pointer-types
+[sized]: trait-bounds.html#sized
+[struct expressions]: expressions/struct-expr.html
+[tokens]: #tokens
+[tuple index]: expressions/tuple-expr.html#tuple-indexing-expressions
 [tuple structs]: items/structs.html
 [tuple variants]: items/enumerations.html
-[arith]: expressions/operator-expr.html#arithmetic-and-logical-binary-operators
-[negation]: expressions/operator-expr.html#negation-operators
-[lazy-bool]: expressions/operator-expr.html#lazy-boolean-operators
-[compound]: expressions/operator-expr.html#compound-assignment-expressions
-[comparison]: expressions/operator-expr.html#comparison-operators
-[match]: expressions/match-expr.html
-[field]: expressions/field-expr.html
-[range]: expressions/range-expr.html
-[trait bounds]: trait-bounds.html
-[dereference]: expressions/operator-expr.html#the-dereference-operator
-[raw pointers]: types.html#raw-pointers-const-and-mut
-[macros]: macros-by-example.html
-[attributes]: attributes.html
-[never type]: types.html#never-type
-[borrow]: expressions/operator-expr.html#borrow-operators
-[references]: types.html#pointer-types
-[closures]: expressions/closure-expr.html
-[assignment]: expressions/operator-expr.html#assignment-expressions
-[constant items]: items/constant-items.html
-[generics]: items/generics.html
-[paths]: paths.html
-[array types]: types.html#array-and-slice-types
-[functions]: items/functions.html
-[question]: expressions/operator-expr.html#the-question-mark-operator
-[sized]: trait-bounds.html#sized
-[extern]: items/external-blocks.html
-[struct expressions]: expressions/struct-expr.html
-[tuple index]: expressions/tuple-expr.html#tuple-indexing-expressions
-[loop labels]: expressions/loop-expr.html
-["Machine Types"]: types.html#machine-types
+[tuples]: types.html#tuple-types
+[unary operators]: expressions/operator-expr.html#borrow-operators

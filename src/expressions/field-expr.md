@@ -45,11 +45,11 @@ let c: &String = &x.f2;         // Can borrow again
 let d: String = x.f3;           // Move out of x.f3
 ```
 
-[_Expression_]: ../expressions.html
 [IDENTIFIER]: ../identifiers.html
+[_Expression_]: ../expressions.html
+[`Drop`]: ../special-types-and-traits.html#drop
 [method call expression]: method-call-expr.html
+[mutable]: ../expressions.html#mutability
+[place expression]: ../expressions.html#place-expressions-and-value-expressions
 [struct]: ../items/structs.html
 [union]: ../items/unions.html
-[place expression]: ../expressions.html#place-expressions-and-value-expressions
-[mutable]: ../expressions.html#mutability
-[`Drop`]: ../special-types-and-traits.html#drop

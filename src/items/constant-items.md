@@ -60,9 +60,9 @@ fn create_and_drop_zero_with_destructor() {
 }
 ```
 
+[IDENTIFIER]: ../identifiers.html
+[_Expression_]: ../expressions.html
+[_Type_]: ../types.html
+[`Drop`]: ../special-types-and-traits.html#drop
 [constant value]: ../expressions.html#constant-expressions
 [static lifetime elision]: ../lifetime-elision.html#static-lifetime-elision
-[`Drop`]: ../special-types-and-traits.html#drop
-[IDENTIFIER]: ../identifiers.html
-[_Type_]: ../types.html
-[_Expression_]: ../expressions.html

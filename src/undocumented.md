@@ -15,13 +15,13 @@ to shrink!
 - [define `crt_link`]
 - `impl Trait`
 
-[`libstd` facade]: https://github.com/rust-lang/rfcs/pull/40
-[Trait reform]: https://github.com/rust-lang/rfcs/pull/48
 [Attributes on `match` arms]: https://github.com/rust-lang/rfcs/pull/49
 [Attributes]: attributes.html
-[Flexible target specification]: https://github.com/rust-lang/rfcs/pull/131
 [Conditional compilation]: attributes.html#conditional-compilation
-[Integer overflow not `unsafe`]: https://github.com/rust-lang/rfcs/pull/560
-[`dllimport`]: https://github.com/rust-lang/rfcs/pull/1717
 [FFI attributes]: attributes.html#ffi-attributes
+[Flexible target specification]: https://github.com/rust-lang/rfcs/pull/131
+[Integer overflow not `unsafe`]: https://github.com/rust-lang/rfcs/pull/560
+[Trait reform]: https://github.com/rust-lang/rfcs/pull/48
+[`dllimport`]: https://github.com/rust-lang/rfcs/pull/1717
+[`libstd` facade]: https://github.com/rust-lang/rfcs/pull/40
 [define `crt_link`]: https://github.com/rust-lang/rfcs/pull/1721

@@ -132,15 +132,15 @@ enum ZeroVariants {}
 ```
 
 [IDENTIFIER]: ../identifiers.html
-[_Generics_]: generics.html
-[_WhereClause_]: generics.html#where-clauses
 [_Expression_]: ../expressions.html
-[_TupleFields_]: structs.html
+[_Generics_]: generics.html
 [_StructFields_]: structs.html
-[enumerated type]: ../types.html#enumerated-types
+[_TupleFields_]: structs.html
+[_WhereClause_]: generics.html#where-clauses
+[`C` representation]: ../type-layout.html#the-c-representation
 [`mem::discriminant`]: ../../std/mem/fn.discriminant.html
-[numeric cast]: ../expressions/operator-expr.html#semantics
 [`repr` attribute]: ../attributes.html#ffi-attributes
 [default representation]: ../type-layout.html#the-default-representation
+[enumerated type]: ../types.html#enumerated-types
+[numeric cast]: ../expressions/operator-expr.html#semantics
 [primitive representation]: ../type-layout.html#primitive-representations
-[`C` representation]: ../type-layout.html#the-c-representation

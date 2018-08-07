@@ -100,17 +100,17 @@ is possible to declare a variable or method with the name `union`.
 > KW_STATICLIFETIME : `'static`\
 > KW_DYN            : `dyn`
 
-[items]: items.html
-[Variables]: variables.html
-[Type parameters]: types.html#type-parameters
-[loop labels]: expressions/loop-expr.html#loop-labels
-[Macros]: macros.html
-[attributes]: attributes.html
-[Macro placeholders]: macros-by-example.html
 [Crates]: crates-and-source-files.html
+[Macro placeholders]: macros-by-example.html
+[Macros]: macros.html
+[Type parameters]: types.html#type-parameters
+[Variables]: variables.html
+[attributes]: attributes.html
+[items]: items.html
+[loop labels]: expressions/loop-expr.html#loop-labels
+[reserved]: #reserved-keywords
+[strict]: #strict-keywords
+[trait object]: types.html#trait-objects
 [union]: items/unions.html
 [variants]: items/enumerations.html
-[trait object]: types.html#trait-objects
-[strict]: #strict-keywords
-[reserved]: #reserved-keywords
 [weak]: #weak-keywords

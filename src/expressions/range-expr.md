@@ -69,9 +69,9 @@ for i in 1..11 {
 ```
 
 [_Expression_]: ../expressions.html
-[std::ops::Range]: ../../std/ops/struct.Range.html
 [std::ops::RangeFrom]: ../../std/ops/struct.RangeFrom.html
-[std::ops::RangeTo]: ../../std/ops/struct.RangeTo.html
 [std::ops::RangeFull]: ../../std/ops/struct.RangeFull.html
 [std::ops::RangeInclusive]: ../../std/ops/struct.RangeInclusive.html
 [std::ops::RangeToInclusive]: ../../std/ops/struct.RangeToInclusive.html
+[std::ops::RangeTo]: ../../std/ops/struct.RangeTo.html
+[std::ops::Range]: ../../std/ops/struct.Range.html

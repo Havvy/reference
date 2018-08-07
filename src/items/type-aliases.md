@@ -27,8 +27,8 @@ let _: F = E::A;  // OK
 // let _: F = F::A;  // Doesn't work
 ```
 
-[type]: ../types.html
 [IDENTIFIER]: ../identifiers.html
 [_Generics_]: generics.html
-[_WhereClause_]: html#where-clauses
 [_Type_]: ../types.html
+[_WhereClause_]: html#where-clauses
+[type]: ../types.html

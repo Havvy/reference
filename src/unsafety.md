@@ -13,7 +13,7 @@ Rust:
 - Calling an unsafe function (including an intrinsic or foreign function).
 - Implementing an unsafe trait.
 
-[raw pointer]: types.html#pointer-types
-[mutable static variable]: items/static-items.html#mutable-statics
-[`union`]: items/unions.html
 [`Copy`]: special-types-and-traits.html#copy
+[`union`]: items/unions.html
+[mutable static variable]: items/static-items.html#mutable-statics
+[raw pointer]: types.html#pointer-types

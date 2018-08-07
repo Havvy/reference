@@ -75,11 +75,11 @@ Point3d { x, y: y_value, z };
 ```
 
 [IDENTIFIER]: ../identifiers.html
-[path]: ../paths.html
-[loop]: loop-expr.html
-[if]: if-expr.html#if-expressions
 [if let]: if-expr.html#if-let-expressions
+[if]: if-expr.html#if-expressions
+[loop]: loop-expr.html
 [match]: match-expr.html
+[path]: ../paths.html
 [struct item]: ../items/structs.html
-[visible]: ../visibility-and-privacy.html
 [union]: ../items/unions.html
+[visible]: ../visibility-and-privacy.html

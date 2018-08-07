@@ -699,51 +699,51 @@ impl Printable for String {
 
 > Note: The notation `&self` is a shorthand for `self: &Self`.
 
-[`Fn`]: ../std/ops/trait.Fn.html
+[References]: #pointer-types
+[Unicode scalar value]: http://www.unicode.org/glossary/#unicode_scalar_value
+[_LIFETIME_OR_LABEL_]: tokens.html#lifetimes-and-loop-labels
+[_PATH_]: paths.html
+[`Clone`]: special-types-and-traits.html#clone
+[`Copy`]: special-types-and-traits.html#copy
 [`FnMut`]: ../std/ops/trait.FnMut.html
 [`FnOnce`]: ../std/ops/trait.FnOnce.html
-[`Copy`]: special-types-and-traits.html#copy
-[`Clone`]: special-types-and-traits.html#clone
+[`Fn`]: ../std/ops/trait.Fn.html
 [`Send`]: special-types-and-traits.html#send
-[`Sync`]: special-types-and-traits.html#sync
 [`Sized`]: special-types-and-traits.html#sized
-[derive]: attributes.html#derive
+[`Sync`]: special-types-and-traits.html#sync
 [`Vec<T>`]: ../std/vec/struct.Vec.html
+[`enum` item]: items/enumerations.html
+[`union` item]: items/unions.html
+[`unsafe` operation]: unsafe-functions.html
+[arrays]: #array-and-slice-types
+[auto traits]: special-types-and-traits.html#auto-traits
+[closure expression]: expressions/closure-expr.html
+[closure]: #closure-types
+[coercion]: type-coercions.html
+[defaults]: lifetime-elision.html#default-trait-object-lifetimes
+[derive]: attributes.html#derive
+[dynamically sized type]: dynamically-sized-types.html
 [dynamically sized type]: dynamically-sized-types.html
 [dynamically sized types]: dynamically-sized-types.html
-[struct expression]: expressions/struct-expr.html
-[closure expression]: expressions/closure-expr.html
-[auto traits]: special-types-and-traits.html#auto-traits
-[object safe]: items/traits.html#object-safety
-[issue 47010]: https://github.com/rust-lang/rust/issues/47010
+[enum variant expression]: expressions/enum-variant-expr.html
+[enumerations]: #enumerated-types
+[function pointers]: #function-pointer-types
+[function]: items/functions.html
+[interior mutability]: interior-mutability.html
 [issue 33140]: https://github.com/rust-lang/rust/issues/33140
-[_PATH_]: paths.html
-[_LIFETIME_OR_LABEL_]: tokens.html#lifetimes-and-loop-labels
-[supertraits]: items/traits.html#supertraits
+[issue 47010]: https://github.com/rust-lang/rust/issues/47010
 [machine types]: #machine-types
 [machine-dependent integer types]: #machine-dependent-integer-types
-[textual types]: #textual-types
 [never type]: #never-type
-[tuples]: #tuple-types
-[arrays]: #array-and-slice-types
-[References]: #pointer-types
+[object safe]: items/traits.html#object-safety
 [pointers]: #raw-pointers-const-and-mut
-[function pointers]: #function-pointer-types
-[closure]: #closure-types
-[defaults]: lifetime-elision.html#default-trait-object-lifetimes
-[Unicode scalar value]: http://www.unicode.org/glossary/#unicode_scalar_value
 [struct expression]: expressions/struct-expr.html
-[visibility modifiers]: visibility-and-privacy.html
-[`enum` item]: items/enumerations.html
-[enum variant expression]: expressions/enum-variant-expr.html
-[coercion]: type-coercions.html
-[`union` item]: items/unions.html
-[function]: items/functions.html
+[struct expression]: expressions/struct-expr.html
 [structs]: #struct-types
-[enumerations]: #enumerated-types
-[unions]: #union-types
-[type definitions]: ../grammar.html#type-definitions
-[interior mutability]: interior-mutability.html
+[supertraits]: items/traits.html#supertraits
 [temporary value]: expressions.html#temporary-lifetimes
-[`unsafe` operation]: unsafe-functions.html
-[dynamically sized type]: dynamically-sized-types.html
+[textual types]: #textual-types
+[tuples]: #tuple-types
+[type definitions]: ../grammar.html#type-definitions
+[unions]: #union-types
+[visibility modifiers]: visibility-and-privacy.html

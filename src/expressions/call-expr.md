@@ -93,9 +93,9 @@ fn main() {
 
 Refer to [RFC 132] for further details and motivations.
 
-[`std::ops::Fn`]: ../../std/ops/trait.Fn.html
+[RFC 132]: https://github.com/rust-lang/rfcs/blob/master/text/0132-ufcs.md
+[_Expression_]: ../expressions.html
 [`std::ops::FnMut`]: ../../std/ops/trait.FnMut.html
 [`std::ops::FnOnce`]: ../../std/ops/trait.FnOnce.html
-[RFC 132]: https://github.com/rust-lang/rfcs/blob/master/text/0132-ufcs.md
+[`std::ops::Fn`]: ../../std/ops/trait.Fn.html
 [non-function types]: ../types.html#function-item-types
-[_Expression_]: ../expressions.html

@@ -179,8 +179,8 @@ unsized coercion to `Foo<U>`.
 > has been stabilized, the traits themselves are not yet stable and therefore
 > can't be used directly in stable Rust.
 
-[Unsize]: ../std/marker/trait.Unsize.html
 [CoerceUnsized]: ../std/ops/trait.CoerceUnsized.html
-[RFC 401]: https://github.com/rust-lang/rfcs/blob/master/text/0401-coercions.md
 [RFC 1558]: https://github.com/rust-lang/rfcs/blob/master/text/1558-closure-to-fn-coercion.md
+[RFC 401]: https://github.com/rust-lang/rfcs/blob/master/text/0401-coercions.md
+[Unsize]: ../std/marker/trait.Unsize.html
 [unsized coercions]: #unsized-coercions

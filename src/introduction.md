@@ -38,9 +38,9 @@ N. B. This document may be incomplete. Documenting everything might take a
 while. We have a [big issue] to track documentation for every Rust feature,
 so check that out if you can't find something here.
 
-[book]: ../book/index.html
-[standard]: ../std/index.html
-[grammar]: ../grammar.html
-[the Rust Reference repository]: https://github.com/rust-lang-nursery/reference/
-[big issue]: https://github.com/rust-lang-nursery/reference/issues/9
 [Unstable Book]: https://doc.rust-lang.org/nightly/unstable-book/
+[big issue]: https://github.com/rust-lang-nursery/reference/issues/9
+[book]: ../book/index.html
+[grammar]: ../grammar.html
+[standard]: ../std/index.html
+[the Rust Reference repository]: https://github.com/rust-lang-nursery/reference/

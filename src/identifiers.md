@@ -21,5 +21,5 @@ Or
 * The identifier is more than one character. `_` alone is not an identifier.
 * The remaining characters are alphanumeric or `_`.
 
-[strict]: keywords.html#strict-keywords
 [reserved]: keywords.html#reserved-keywords
+[strict]: keywords.html#strict-keywords

@@ -92,5 +92,5 @@ let a = if let Some(1) = x {
 assert_eq!(a, 3);
 ```
 
-[_Expression_]: ../expressions.html
 [_BlockExpression_]: block-expr.html
+[_Expression_]: ../expressions.html

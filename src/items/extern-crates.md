@@ -38,5 +38,5 @@ Here is an example:
 extern crate hello_world; // hyphen replaced with an underscore
 ```
 
-[RFC 940]: https://github.com/rust-lang/rfcs/blob/master/text/0940-hyphens-considered-harmful.md
 [IDENTIFIER]: ../identifiers.html
+[RFC 940]: https://github.com/rust-lang/rfcs/blob/master/text/0940-hyphens-considered-harmful.md

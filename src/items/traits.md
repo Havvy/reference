@@ -115,16 +115,16 @@ let circle = Box::new(circle) as Box<dyn Circle>;
 let nonsense = circle.radius() * circle.area();
 ```
 
-[bounds]: ../trait-bounds.html
-[trait object]: ../types.html#trait-objects
-[explicit]: ../expressions/operator-expr.html#type-cast-expressions
 [RFC 255]: https://github.com/rust-lang/rfcs/blob/master/text/0255-object-safety.md
 [associated items]: associated-items.html
-[method]: associated-items.html#methods
-[implementations]: implementations.html
-[generics]: generics.html
-[where clauses]: generics.html#where-clauses
-[generic functions]: functions.html#generic-functions
-[functions]: associated-items.html#associated-functions-and-methods
-[types]: associated-items.html#associated-types
+[bounds]: ../trait-bounds.html
 [constants]: associated-items.html#associated-constants
+[explicit]: ../expressions/operator-expr.html#type-cast-expressions
+[functions]: associated-items.html#associated-functions-and-methods
+[generic functions]: functions.html#generic-functions
+[generics]: generics.html
+[implementations]: implementations.html
+[method]: associated-items.html#methods
+[trait object]: ../types.html#trait-objects
+[types]: associated-items.html#associated-types
+[where clauses]: generics.html#where-clauses

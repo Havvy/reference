@@ -121,7 +121,7 @@ fn main() {}
 [IDENTIFIER]: ../identifiers.html
 [_SimplePath_]: ../paths.html
 [_Visibility_]: ../visibility-and-privacy.html
-[path]: ../paths.html
-[modules]: modules.html
-[blocks]: ../expressions/block-expr.html
 [`extern crate` declarations]: extern-crates.html
+[blocks]: ../expressions/block-expr.html
+[modules]: modules.html
+[path]: ../paths.html

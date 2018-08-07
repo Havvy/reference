@@ -123,46 +123,45 @@ compile-time; that is, it's not a [dynamically sized type]. [Type parameters]
 are `Sized` by default. `Sized` is always implemented automatically by the
 compiler, not by [implementation items].
 
+[Arrays]: types.html#array-and-slice-types
+[Function pointers]: types.html#function-pointer-types
+[Methods]: items/associated-items.html#associated-functions-and-methods
+[Numeric types]: types.html#numeric-types
+[Raw pointers]: types.html#raw-pointers-const-and-mut
+[Shared references]: types.html#shared-references-
+[Tuples]: types.html#tuple-types
+[Type parameters]: types.html#type-parameters
+[`!`]: types.html#never-type
 [`Box<T>`]: ../std/boxed/struct.Box.html
 [`Clone`]: ../std/clone/trait.Clone.html
 [`Copy`]: ../std/marker/trait.Copy.html
-[`Deref`]: ../std/ops/trait.Deref.html
 [`DerefMut`]: ../std/ops/trait.DerefMut.html
+[`Deref`]: ../std/ops/trait.Deref.html
 [`Drop`]: ../std/ops/trait.Drop.html
 [`RefUnwindSafe`]: ../std/panic/trait.RefUnwindSafe.html
 [`Send`]: ../std/marker/trait.Send.html
 [`Sized`]: ../std/marker/trait.Sized.html
+[`Sync`]: ../std/marker/trait.Sync.html
+[`UnwindSafe`]: ../std/panic/trait.UnwindSafe.html
+[`static` items]: items/static-items.html
 [`std::cell::UnsafeCell<T>`]: ../std/cell/struct.UnsafeCell.html
 [`std::cmp`]: ../std/cmp/index.html
 [`std::marker::PhantomData<T>`]: ../std/marker/struct.PhantomData.html
 [`std::ops`]: ../std/ops/index.html
-[`UnwindSafe`]: ../std/panic/trait.UnwindSafe.html
-[`Sync`]: ../std/marker/trait.Sync.html
-
-[Arrays]: types.html#array-and-slice-types
+[auto traits]: #auto-traits
 [call expressions]: expressions/call-expr.html
 [deref coercions]: type-coercions.html#coercion-types
 [dereference operator]: expressions/operator-expr.html#the-dereference-operator
 [destructor]: destructors.html
 [drop check]: ../nomicon/dropck.html
 [dynamically sized type]: dynamically-sized-types.html
-[Function pointers]: types.html#function-pointer-types
 [function item types]: types.html#function-item-types
 [implementation items]: items/implementations.html
 [indexing expressions]: expressions/array-expr.html#array-and-slice-indexing-expressions
 [interior mutability]: interior-mutability.html
-[Numeric types]: types.html#numeric-types
-[Methods]: items/associated-items.html#associated-functions-and-methods
 [method resolution]: expressions/method-call-expr.html
 [operators]: expressions/operator-expr.html
 [orphan rules]: items/implementations.html#trait-implementation-coherence
-[Raw pointers]: types.html#raw-pointers-const-and-mut
-[`static` items]: items/static-items.html
-[Shared references]: types.html#shared-references-
 [the standard library]: ../std/index.html
 [trait object]: types.html#trait-objects
-[Tuples]: types.html#tuple-types
-[Type parameters]: types.html#type-parameters
 [variance]: subtyping.html#variance
-[`!`]: types.html#never-type
-[auto traits]: #auto-traits

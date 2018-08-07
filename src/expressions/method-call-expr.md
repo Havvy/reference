@@ -94,12 +94,12 @@ method and you'll be fine.
 </div>
 
 [IDENTIFIER]: ../identifiers.html
-[visible]: ../visibility-and-privacy.html
 [array]: ../types.html#array-and-slice-types
-[trait objects]: ../types.html#trait-objects
+[dereference]: operator-expr.html#the-dereference-operator
 [disambiguate call]: call-expr.html#disambiguating-function-calls
 [disambiguating function call syntax]: call-expr.html#disambiguating-function-calls
-[dereference]: operator-expr.html#the-dereference-operator
 [methods]: ../items/associated-items.html#methods
-[unsized coercion]: ../type-coercions.html#unsized-coercions
 [trait object]: ../types.html#trait-objects
+[trait objects]: ../types.html#trait-objects
+[unsized coercion]: ../type-coercions.html#unsized-coercions
+[visible]: ../visibility-and-privacy.html

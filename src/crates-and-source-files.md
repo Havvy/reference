@@ -104,15 +104,15 @@ fn main() {
     ECMA-335 CLI model, a *library* in the SML/NJ Compilation Manager, a *unit*
     in the Owens and Flatt module system, or a *configuration* in Mesa.
 
-[module]: items/modules.html
-[module path]: paths.html
-[attributes]: attributes.html
-[unit]: types.html#tuple-types
 [_InnerAttribute_]: attributes.html
 [_Item_]: items.html
 [_shebang_]: https://en.wikipedia.org/wiki/Shebang_(Unix)
 [_utf8 byte order mark_]: https://en.wikipedia.org/wiki/Byte_order_mark#UTF-8
-[function]: items/functions.html
 [`Termination`]: ../std/process/trait.Termination.html
-[where clauses]: items/generics.html#where-clauses
+[attributes]: attributes.html
+[function]: items/functions.html
+[module path]: paths.html
+[module]: items/modules.html
 [trait or lifetime bounds]: trait-bounds.html
+[unit]: types.html#tuple-types
+[where clauses]: items/generics.html#where-clauses

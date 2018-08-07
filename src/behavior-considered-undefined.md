@@ -39,12 +39,12 @@ code.
   * A value in a `char` which is a surrogate or above `char::MAX`.
   * Non-UTF-8 byte sequences in a `str`.
 
+[`UnsafeCell<U>`]: https://doc.rust-lang.org/std/cell/struct.UnsafeCell.html
+[`offset`]: https://doc.rust-lang.org/std/primitive.pointer.html#method.offset
+[`read_unaligned`]: https://doc.rust-lang.org/std/ptr/fn.read_unaligned.html
+[`std::ptr::copy_nonoverlapping_memory`]: https://doc.rust-lang.org/std/ptr/fn.copy_nonoverlapping.html
+[`write_unaligned`]: https://doc.rust-lang.org/std/ptr/fn.write_unaligned.html
+[Rustonomicon]: ../nomicon/index.html
 [noalias]: http://llvm.org/docs/LangRef.html#noalias
 [pointer aliasing rules]: http://llvm.org/docs/LangRef.html#pointer-aliasing-rules
 [undef]: http://llvm.org/docs/LangRef.html#undefined-values
-[`offset`]: https://doc.rust-lang.org/std/primitive.pointer.html#method.offset
-[`std::ptr::copy_nonoverlapping_memory`]: https://doc.rust-lang.org/std/ptr/fn.copy_nonoverlapping.html
-[`UnsafeCell<U>`]: https://doc.rust-lang.org/std/cell/struct.UnsafeCell.html
-[`read_unaligned`]: https://doc.rust-lang.org/std/ptr/fn.read_unaligned.html
-[`write_unaligned`]: https://doc.rust-lang.org/std/ptr/fn.write_unaligned.html
-[Rustonomicon]: ../nomicon/index.html

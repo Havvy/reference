@@ -473,30 +473,30 @@ impl<T: PartialEq> PartialEq for Foo<T> {
 You can implement `derive` for your own traits through [procedural macros].
 
 [Doc comments]: comments.html#doc-comments
-[The Rustdoc Book]: ../rustdoc/the-doc-attribute.html
-[procedural macros]: procedural-macros.html
-[struct]: items/structs.html
-[enum]: items/enumerations.html
-[union]: items/unions.html
-[functions]: items/functions.html
-[expression]: expressions.html
-[expression statement]: statements.html#expression-statements
-[call expression]: expressions/call-expr.html
-[block expression]: expressions/block-expr.html
-[block expressions]: expressions/block-expr.html
-[`Drop`]: special-types-and-traits.html#drop
-[let statement]: statements.html#let-statements
-[unstable book plugin]: ../unstable-book/language-features/plugin.html#lint-plugins
-[zero-variant enum]: items/enumerations.html#zero-variant-enums
 [ECMA-334]: https://www.ecma-international.org/publications/standards/Ecma-334.htm
 [ECMA-335]: https://www.ecma-international.org/publications/standards/Ecma-335.htm
-[item declarations]: items.html
+[The Rustdoc Book]: ../rustdoc/the-doc-attribute.html
+[`Drop`]: special-types-and-traits.html#drop
+[block expression]: expressions/block-expr.html
+[block expressions]: expressions/block-expr.html
+[call expression]: expressions/call-expr.html
+[conditional compilation]: conditional-compilation.html
+[enum]: items/enumerations.html
+[expression statement]: statements.html#expression-statements
+[expression]: expressions.html
+[external blocks]: items/external-blocks.html
+[functions]: items/functions.html
 [generics]: items/generics.html
 [implementations]: items/implementations.html
-[modules]: items/modules.html
-[statements]: statements.html
-[match expressions]: expressions/match-expr.html
-[external blocks]: items/external-blocks.html
+[item declarations]: items.html
 [items]: items.html
-[conditional compilation]: conditional-compilation.html
+[let statement]: statements.html#let-statements
+[match expressions]: expressions/match-expr.html
+[modules]: items/modules.html
+[procedural macros]: procedural-macros.html
+[statements]: statements.html
+[struct]: items/structs.html
 [trait]: items/traits.html
+[union]: items/unions.html
+[unstable book plugin]: ../unstable-book/language-features/plugin.html#lint-plugins
+[zero-variant enum]: items/enumerations.html#zero-variant-enums
