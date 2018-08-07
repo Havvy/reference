@@ -2,9 +2,9 @@
 
 Rust divides keywords into three categories:
 
-* [strict](#strict-keywords)
-* [reserved](#reserved-keywords)
-* [weak](#weak-keywords)
+* [strict]
+* [reserved]
+* [weak]
 
 ## Strict keywords
 
@@ -111,3 +111,6 @@ is possible to declare a variable or method with the name `union`.
 [union]: items/unions.html
 [variants]: items/enumerations.html
 [trait object]: types.html#trait-objects
+[strict]: #strict-keywords
+[reserved]: #reserved-keywords
+[weak]: #weak-keywords

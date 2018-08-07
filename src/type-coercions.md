@@ -3,9 +3,6 @@
 Coercions are defined in [RFC 401]. [RFC 1558] then expanded on that.
 A coercion is implicit and has no syntax.
 
-[RFC 401]: https://github.com/rust-lang/rfcs/blob/master/text/0401-coercions.md
-[RFC 1558]: https://github.com/rust-lang/rfcs/blob/master/text/1558-closure-to-fn-coercion.md
-
 ## Coercion sites
 
 A coercion can only occur at certain coercion sites in a program; these are
@@ -39,7 +36,7 @@ sites are:
   ```
 
   For method calls, the receiver (`self` parameter) can only take advantage
-  of [unsized coercions](#unsized-coercions).
+  of [unsized coercions].
 
 * Instantiations of struct or variant fields
 
@@ -184,3 +181,6 @@ unsized coercion to `Foo<U>`.
 
 [Unsize]: ../std/marker/trait.Unsize.html
 [CoerceUnsized]: ../std/ops/trait.CoerceUnsized.html
+[RFC 401]: https://github.com/rust-lang/rfcs/blob/master/text/0401-coercions.md
+[RFC 1558]: https://github.com/rust-lang/rfcs/blob/master/text/1558-closure-to-fn-coercion.md
+[unsized coercions]: #unsized-coercions

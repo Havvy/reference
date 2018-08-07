@@ -87,7 +87,7 @@ A *value expression* is an expression that represents an actual value.
 The left operand of an [assignment][assign] or [compound assignment] expression
 is a place expression context, as is the single operand of a unary [borrow], and
 the operand of any [implicit borrow]. The discriminant or subject of a
-[match expression][match] and right side of a [let statement] is also a place
+[match expression][match] and right side of a [let statement][let] is also a place
 expression context. All other expression contexts are value expression contexts.
 
 > Note: Historically, place expressions were called *lvalues* and value
@@ -102,7 +102,7 @@ the remaining situations if that type is [`Sized`], then it may be possible to
 move the value. Only the following place expressions may be moved out of:
 
 * [Variables] which are not currently borrowed.
-* [Temporary values](#temporary-lifetimes).
+* [Temporary values].
 * [Fields][field] of a place expression which can be moved out of and
   doesn't implement [`Drop`].
 * The result of [dereferencing] an expression with type [`Box<T>`] and that can
@@ -145,9 +145,9 @@ of a value expression to a `'static` slot occurs when the expression could be
 written in a constant, borrowed, and dereferencing that borrow where the
 expression was the originally written, without changing the runtime behavior.
 That is, the promoted expression can be evaluated at compile-time and the
-resulting value does not contain [interior mutability] or [destructors] (these
-properties are determined based on the value where possible, e.g. `&None`
-always has the type `&'static Option<_>`, as it contains nothing disallowed).
+resulting value does not contain [interior mutability] or [destructors] \(these
+properties are determined based on the value where possible, e.g. `&None` always
+has the type `&'static Option<_>`, as it contains nothing disallowed).
 Otherwise, the lifetime of temporary values is typically
 
 - the innermost enclosing statement; the tail expression of a block is
@@ -233,9 +233,9 @@ Implicit borrows may be taken in the following expressions:
 
 Certain types of expressions can be evaluated at compile time. These are called
 _constant expressions_. Certain places, such as in
-[constants](items/constant-items.html) and [statics](items/static-items.html),
+[constants] and [statics](static variables),
 require a constant expression, and are always evaluated at compile time. In
-other places, such as in [`let` statements](statements.html#let-statements),
+other places, such as in [`let` statements][let],
 constant expressions may be evaluated at compile time. If errors, such as out
 of bounds [array indexing] or [overflow] occurs,
 then it is a compiler error if the value must be evaluated at compile time,
@@ -246,7 +246,7 @@ also constant expressions and do not cause any [`Drop::drop`][destructors] calls
 to be ran.
 
 * [Literals].
-* [Paths] to [functions](items/functions.html) and constants.
+* [Paths] to [functions] and constants.
   Recursively defining constants is not allowed.
 * [Tuple expressions].
 * [Array expressions].
@@ -302,6 +302,8 @@ exist in `core::ops` and `core::cmp` with the same names.
 [negation]:             expressions/operator-expr.html#negation-operators
 [overflow]:             expressions/operator-expr.html#overflow
 
+[functions]: items/functions.html
+[constants]: items/constant-items.html
 [destructors]:          destructors.html
 [interior mutability]:  interior-mutability.html
 [`Box<T>`]:             ../std/boxed/struct.Box.html
@@ -311,7 +313,6 @@ exist in `core::ops` and `core::cmp` with the same names.
 [implicit borrow]:      #implicit-borrows
 [implicitly mutably borrowed]: #implicit-borrows
 [let]:                  statements.html#let-statements
-[let statement]:        statements.html#let-statements
 [Mutable `static` items]: items/static-items.html#mutable-statics
 [slice]:                types.html#array-and-slice-types
 [static variables]:     items/static-items.html

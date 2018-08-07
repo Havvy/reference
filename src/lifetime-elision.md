@@ -12,7 +12,7 @@ It is an error to elide lifetime parameters that cannot be inferred. The
 placeholder lifetime, `'_`, can also be used to have a lifetime inferred in the
 same way. For lifetimes in paths, using `'_` is preferred. Trait object
 lifetimes follow different rules discussed
-[below](#default-trait-object-lifetimes).
+[below][trait object lifetimes].
 
 * Each elided lifetime in the parameters becomes a distinct lifetime parameter.
 * If there is exactly one lifetime used in the parameters (elided or not), that
@@ -179,3 +179,4 @@ const RESOLVED_STATIC: &dyn Fn(&Foo, &Bar) -> &Baz = ..
 [static]: items/static-items.html
 [trait object]: types.html#trait-objects
 [type aliases]: items/type-aliases.html
+[trait object lifetimes]: #default-trait-object-lifetimes

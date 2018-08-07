@@ -483,8 +483,6 @@ to call a method named `f64` on `2`.
 The representation semantics of floating-point numbers are described in
 ["Machine Types"].
 
-["Machine Types"]: types.html#machine-types
-
 ### Boolean literals
 
 > **<sup>Lexer</sup>**\
@@ -507,8 +505,6 @@ The two values of the boolean type are written `true` and `false`.
 Lifetime parameters and [loop labels] use LIFETIME_OR_LABEL tokens. Any
 LIFETIME_TOKEN will be accepted by the lexer, and for example, can be used in
 macros.
-
-[loop labels]: expressions/loop-expr.html
 
 ## Punctuation
 
@@ -577,6 +573,8 @@ them are referred to as "token trees" in [macros].  The three types of brackets 
 
 
 [Operator expressions]: expressions/operator-expr.html
+[unary operators]: expressions/operator-expr.html#borrow-operators
+[binary operators]: expressions/operator-expr.html#arithmetic-and-logical-binary-operators
 [tokens]: #tokens
 [keywords]: keywords.html
 [identifier]: identifiers.html
@@ -611,3 +609,5 @@ them are referred to as "token trees" in [macros].  The three types of brackets 
 [extern]: items/external-blocks.html
 [struct expressions]: expressions/struct-expr.html
 [tuple index]: expressions/tuple-expr.html#tuple-indexing-expressions
+[loop labels]: expressions/loop-expr.html
+["Machine Types"]: types.html#machine-types

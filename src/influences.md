@@ -18,5 +18,6 @@ that have since been removed):
 * C#: attributes
 * Ruby: <strike>block syntax</strike>
 * NIL, Hermes: <strike>typestate</strike>
-* [Unicode Annex #31](http://www.unicode.org/reports/tr31/): identifier and
-  pattern syntax
+* [Unicode Annex #31]: identifier and pattern syntax
+
+[Unicode Annex #31]: http://www.unicode.org/reports/tr31/

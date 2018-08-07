@@ -27,7 +27,7 @@ mutability aren't placed in memory marked as read only.
 
 [`std::marker::PhantomData<T>`] is a zero-sized, minimum alignment, type that
 is considered to own a `T` for the purposes of [variance], [drop check] and
-[auto traits](#auto-traits).
+[auto traits].
 
 ## Operator Traits
 
@@ -165,3 +165,4 @@ compiler, not by [implementation items].
 [Type parameters]: types.html#type-parameters
 [variance]: subtyping.html#variance
 [`!`]: types.html#never-type
+[auto traits]: #auto-traits

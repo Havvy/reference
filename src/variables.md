@@ -1,8 +1,7 @@
 # Variables
 
 A _variable_ is a component of a stack frame, either a named function parameter,
-an anonymous [temporary](expressions.html#temporary-lifetimes), or a named local
-variable.
+an anonymous [temporary], or a named local variable.
 
 A _local variable_ (or *stack-local* allocation) holds a value directly,
 allocated within the stack's memory. The value is a part of the stack frame.
@@ -52,3 +51,5 @@ fn initialization_example() {
     // uninit_after_if; // err: use of possibly uninitialized `uninit_after_if`
 }
 ```
+
+[temporary]: expressions.html#temporary-lifetimes

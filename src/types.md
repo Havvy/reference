@@ -14,7 +14,7 @@ library, these are called _primitive types_. Some of these are individual
 types:
 
 * The boolean type `bool` with values `true` and `false`.
-* The [machine types] (integer and floating-point).
+* The [machine types] \(integer and floating-point).
 * The [machine-dependent integer types].
 * The [textual types] `char` and `str`.
 * The [never type] `!`
@@ -22,25 +22,12 @@ types:
 There are also some primitive constructs for generic types built in to the
 language:
 
-* [Tuples]
-* [Arrays]
-* [Slices]
-* [Function pointers]
+* [Tuples][tuples]
+* [Arrays][arrays]
+* [Slices][arrays]
+* [Function pointers][function pointers]
 * [References]
-* [Pointers]
-
-[machine types]: #machine-types
-[machine-dependent integer types]: #machine-dependent-integer-types
-[textual types]: #textual-types
-[never type]: #never-type
-[Tuples]: #tuple-types
-[Arrays]: #array-and-slice-types
-[Slices]: #array-and-slice-types
-[References]: #pointer-types
-[Pointers]: #raw-pointers-const-and-mut
-[Function pointers]: #function-pointer-types
-[function]: #function-types
-[closure]: #closure-types
+* [Pointers][pointers]
 
 ## Numeric types
 
@@ -75,11 +62,9 @@ within an object along with one byte past the end.
 
 The types `char` and `str` hold textual data.
 
-A value of type `char` is a [Unicode scalar value](
-http://www.unicode.org/glossary/#unicode_scalar_value) (i.e. a code point that
-is not a surrogate), represented as a 32-bit unsigned word in the 0x0000 to
-0xD7FF or 0xE000 to 0x10FFFF range. A `[char]` is effectively a UCS-4 / UTF-32
-string.
+A value of type `char` is a [Unicode scalar value] \(i.e. a code point that is
+not a surrogate), represented as a 32-bit unsigned word in the 0x0000 to 0xD7FF
+or 0xE000 to 0x10FFFF range. A `[char]` is effectively a UCS-4 / UTF-32 string.
 
 A value of type `str` is a Unicode string, represented as an array of 8-bit
 unsigned bytes holding a sequence of UTF-8 code points. Since `str` is a
@@ -163,7 +148,7 @@ A `struct` *type* is a heterogeneous product of other types, called the
 *fields* of the type.[^structtype]
 
 New instances of a `struct` can be constructed with a [struct
-expression](expressions/struct-expr.html).
+expression].
 
 The memory layout of a `struct` is undefined by default to allow for compiler
 optimizations like field reordering, but it can be fixed with the
@@ -172,7 +157,7 @@ corresponding struct *expression*; the resulting `struct` value will always
 have the same memory layout.
 
 The fields of a `struct` may be qualified by [visibility
-modifiers](visibility-and-privacy.html), to allow access to data in a struct
+modifiers], to allow access to data in a struct
 outside a module.
 
 A _tuple struct_ type is just like a struct type, except that the fields are
@@ -188,20 +173,20 @@ value that inhabits such a type.
 ## Enumerated types
 
 An *enumerated type* is a nominal, heterogeneous disjoint union type, denoted
-by the name of an [`enum` item](items/enumerations.html). [^enumtype]
+by the name of an [`enum` item]. [^enumtype]
 
-An [`enum` item](items/enumerations.html) declares both the type and a number
+An [`enum` item] declares both the type and a number
 of *variants*, each of which is independently named and has the syntax of a
 struct, tuple struct or unit-like struct.
 
 New instances of an `enum` can be constructed in an [enumeration variant
-expression](expressions/enum-variant-expr.html).
+expression].
 
 Any `enum` value consumes as much memory as the largest variant for its
 corresponding `enum` type, as well as the size needed to store a discriminant.
 
 Enum types cannot be denoted *structurally* as types, but must be denoted by
-named reference to an [`enum` item](items/enumerations.html).
+named reference to an [`enum` item].
 
 [^enumtype]: The `enum` type is analogous to a `data` constructor declaration in
              ML, or a *pick ADT* in Limbo.
@@ -209,7 +194,7 @@ named reference to an [`enum` item](items/enumerations.html).
 ## Union types
 
 A *union type* is a nominal, heterogeneous C-like union, denoted by the name of
-a [`union` item](items/unions.html).
+a [`union` item].
 
 A union contains the value of any one of its fields. Since the accessing the
 wrong field can cause unexpected or undefined behaviour, `unsafe` is required
@@ -219,22 +204,19 @@ to read from a union field or to write to a field that doesn't implement
 The memory layout of a `union` is undefined by default, but the `#[repr(...)]`
 attribute can be used to fix a layout.
 
-[`Copy`]: special-types-and-traits.html#copy
-
 ## Recursive types
 
-Nominal types &mdash; [structs](#struct-types),
-[enumerations](#enumerated-types) and [unions](#union-types) &mdash; may be
+Nominal types &mdash; [structs], [enumerations] and [unions] &mdash; may be
 recursive. That is, each `enum` variant or `struct` or `union` field may refer,
 directly or indirectly, to the enclosing `enum` or `struct` type itself. Such
 recursion has restrictions:
 
 * Recursive types must include a nominal type in the recursion (not mere [type
-  definitions](../grammar.html#type-definitions), or other structural types
-  such as [arrays](#array-and-slice-types) or [tuples](#tuple-types)). So
+  definitions], or other structural types
+  such as [arrays] or [tuples]). So
   `type Rec = &'static [Rec]` is not allowed.
 * The size of a recursive type must be finite; in other words the recursive
-  fields of the type must be [pointer types](#pointer-types).
+  fields of the type must be [pointer types][pointers].
 * Recursive type definitions can cross module boundaries, but not module
   *visibility* boundaries, or crate boundaries (in order to simplify the module
   system and type checker).
@@ -259,13 +241,13 @@ copied, stored into data structs, and returned from functions.
 
 These point to memory _owned by some other value_. When a shared reference to a
 value is created it prevents direct mutation of the value. [Interior
-mutability](interior-mutability.html) provides an exception for this in certain
+mutability] provides an exception for this in certain
 circumstances. As the name suggests, any number of shared references to a value
 may exit. A shared reference type is written `&type`, or `&'a type` when you
 need to specify an explicit lifetime. Copying a reference is a "shallow"
 operation: it involves only copying the pointer itself, that is, pointers are
 `Copy`. Releasing a reference has no effect on the value it points to, but
-referencing of a [temporary value](expressions.html#temporary-lifetimes) will
+referencing of a [temporary value] will
 keep it alive during the scope of the reference itself.
 
 ### Mutable references (`&mut`)
@@ -280,14 +262,14 @@ Raw pointers are pointers without safety or liveness guarantees. Raw pointers
 are written as `*const T` or `*mut T`, for example `*const i32` means a raw
 pointer to a 32-bit integer. Copying or dropping a raw pointer has no effect on
 the lifecycle of any other value. Dereferencing a raw pointer is an [`unsafe`
-operation](unsafe-functions.html), this can also be used to convert a raw
+operation], this can also be used to convert a raw
 pointer to a reference by reborrowing it (`&*` or `&mut *`). Raw pointers are
 generally discouraged in Rust code; they exist to support interoperability with
 foreign code, and writing performance-critical or low-level functions.
 
 When comparing pointers they are compared by their address, rather than by what
 they point to. When comparing pointers to [dynamically sized
-types](dynamically-sized-types.html) they also have their addition data
+types] they also have their addition data
 compared.
 
 ### Smart Pointers
@@ -320,12 +302,10 @@ let x = &mut foo::<i32>;
 ```
 
 However, there is a [coercion] from function items to [function
-pointers](#function-pointer-types) with the same signature, which is triggered
+pointers] with the same signature, which is triggered
 not only when a function item is used when a function pointer is directly
-expected, but also when different function item types with the same signature
-meet in different arms of the same `if` or `match`:
-
-[coercion]: type-coercions.html
+expected, but also when different function types with the same signature meet in
+different arms of the same `if` or `match`:
 
 ```rust
 # let want_i32 = false;
@@ -349,8 +329,8 @@ All function items implement [`Fn`], [`FnMut`], [`FnOnce`], [`Copy`],
 
 Function pointer types, written using the `fn` keyword, refer to a function
 whose identity is not necessarily known at compile-time. They can be created
-via a coercion from both [function items](#function-item-types) and
-non-capturing [closures](#closure-types).
+via a coercion from both [function items][function] and non-capturing
+[closures][closure].
 
 A function pointer type consists of a possibly-empty set of function-type
 modifiers (such as `unsafe` or `extern`), a sequence of input types and an
@@ -637,8 +617,6 @@ need to be expressed as part of the trait object. This lifetime is written as
 `Trait + 'a`. There are [defaults] that allow this lifetime to usually be
 inferred with a sensible choice.
 
-[defaults]: lifetime-elision.html#default-trait-object-lifetimes
-
 ## Type parameters
 
 Within the body of an item that has type parameter declarations, the names of
@@ -742,3 +720,30 @@ impl Printable for String {
 [_PATH_]: paths.html
 [_LIFETIME_OR_LABEL_]: tokens.html#lifetimes-and-loop-labels
 [supertraits]: items/traits.html#supertraits
+[machine types]: #machine-types
+[machine-dependent integer types]: #machine-dependent-integer-types
+[textual types]: #textual-types
+[never type]: #never-type
+[tuples]: #tuple-types
+[arrays]: #array-and-slice-types
+[References]: #pointer-types
+[pointers]: #raw-pointers-const-and-mut
+[function pointers]: #function-pointer-types
+[closure]: #closure-types
+[defaults]: lifetime-elision.html#default-trait-object-lifetimes
+[Unicode scalar value]: http://www.unicode.org/glossary/#unicode_scalar_value
+[struct expression]: expressions/struct-expr.html
+[visibility modifiers]: visibility-and-privacy.html
+[`enum` item]: items/enumerations.html
+[enum variant expression]: expressions/enum-variant-expr.html
+[coercion]: type-coercions.html
+[`union` item]: items/unions.html
+[function]: items/functions.html
+[structs]: #struct-types
+[enumerations]: #enumerated-types
+[unions]: #union-types
+[type definitions]: ../grammar.html#type-definitions
+[interior mutability]: interior-mutability.html
+[temporary value]: expressions.html#temporary-lifetimes
+[`unsafe` operation]: unsafe-functions.html
+[dynamically sized type]: dynamically-sized-types.html

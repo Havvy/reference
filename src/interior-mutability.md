@@ -26,5 +26,3 @@ across threads.
 [`std::cell::UnsafeCell<T>`]: ../std/cell/struct.UnsafeCell.html
 [`std::cell::RefCell<T>`]: ../std/cell/struct.RefCell.html
 [`std::sync::atomic`]: ../std/sync/atomic/index.html
-
-

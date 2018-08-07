@@ -9,7 +9,7 @@
 
 > **<sup>Lexer</sup>**\
 > UTF8BOM : `\uFEFF`\
-> SHEBANG : `#!` ~[`[` `\n`] ~`\n`<sup>*</sup>
+> SHEBANG : `#!` ~[`[` `\n`] ~`\n`<sup>\*</sup>
 
 
 > Note: Although Rust, like any other language, can be implemented by an
@@ -78,11 +78,11 @@ type must  be one of the following:
 > Note: The implementation of which return types are allowed is determined by
 > the unstable [`Termination`] trait.
 
-The optional [_UTF8 byte order mark_] (UTF8BOM production) indicates that the
+The optional [_UTF8 byte order mark_] \(UTF8BOM production) indicates that the
 file is encoded in UTF8. It can only occur at the beginning of the file and
 is ignored by the compiler.
 
-A source file can have a [_shebang_] (SHEBANG production), which indicates
+A source file can have a [_shebang_] \(SHEBANG production), which indicates
 to the operating system what program to use to execute this file. It serves
 essentially to treat the source file as an executable script. The shebang
 can only occur at the beginning of the file (but after the optional

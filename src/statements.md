@@ -3,9 +3,8 @@
 A *statement* is a component of a [block], which is in turn a component of an
 outer [expression] or [function].
 
-Rust has two kinds of statement: [declaration
-statements](#declaration-statements) and [expression
-statements](#expression-statements).
+Rust has two kinds of statement: [declaration statements] and [expression
+statements].
 
 ## Declaration statements
 
@@ -106,3 +105,5 @@ statement are [`cfg`], and [the lint check attributes].
 [outer attributes]: attributes.html
 [`cfg`]: attributes.html#conditional-compilation
 [the lint check attributes]: attributes.html#lint-check-attributes
+[declaration statements]: #declaration-statements
+[expression statements]: #expression-statements

@@ -137,7 +137,6 @@ fn call_on_ref_zero<F>(f: F) where F: for<'a> Fn(&'a i32) {
 [LIFETIME_OR_LABEL]: tokens.html#lifetimes-and-loop-labels
 [_TraitPath_]: paths.html
 [`Sized`]: special-types-and-traits.html#sized
-
 [associated types]: items/associated-items.html#associated-types
 [supertraits]: items/traits.html#supertraits
 [generic]: items/generics.html

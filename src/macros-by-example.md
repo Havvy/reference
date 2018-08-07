@@ -32,18 +32,6 @@ syntax named by _designator_. Valid designators are:
 * `meta`: the contents of an [attribute]
 * `lifetime`: a lifetime. Examples: `'static`, `'a`.
 
-[item]: items.html
-[block]: expressions/block-expr.html
-[statement]: statements.html
-[pattern]: expressions/match-expr.html
-[expression]: expressions.html
-[type]: types.html
-[identifier]: identifiers.html
-[keyword]: keywords.html
-[path]: paths.html
-[token]: tokens.html
-[attribute]: attributes.html
-
 In the transcriber, the
 designator is already known, and so only the name of a matched nonterminal comes
 after the dollar sign.
@@ -88,3 +76,14 @@ Rust syntax is restricted in two ways:
    requiring a distinctive token in front can solve the problem.
 
 [RFC 550]: https://github.com/rust-lang/rfcs/blob/master/text/0550-macro-future-proofing.md
+[item]: items.html
+[block]: expressions/block-expr.html
+[statement]: statements.html
+[pattern]: expressions/match-expr.html
+[expression]: expressions.html
+[type]: types.html
+[identifier]: identifiers.html
+[keyword]: keywords.html
+[path]: paths.html
+[token]: tokens.html
+[attribute]: attributes.html

@@ -5,8 +5,6 @@ statically and dynamically. This section will explore the various methods to
 link Rust crates together, and more information about native libraries can be
 found in the [FFI section of the book][ffi].
 
-[ffi]: ../book/ffi.html
-
 In one session of compilation, the compiler can generate multiple artifacts
 through the usage of either command line flags or the `crate_type` attribute.
 If one or more command line flags are specified, all `crate_type` attributes will
@@ -196,8 +194,6 @@ fn main() {
 }
 ```
 
-[cargo]: http://doc.crates.io/environment-variables.html#environment-variables-cargo-sets-for-build-scripts
-
 To use this feature locally, you typically will use the `RUSTFLAGS` environment
 variable to specify flags to the compiler through Cargo. For example to compile
 a statically linked binary on MSVC you would execute:
@@ -205,3 +201,6 @@ a statically linked binary on MSVC you would execute:
 ```ignore,notrust
 RUSTFLAGS='-C target-feature=+crt-static' cargo build --target x86_64-pc-windows-msvc
 ```
+
+[ffi]: ../book/ffi.html
+[cargo]: http://doc.crates.io/environment-variables.html#environment-variables-cargo-sets-for-build-scripts
