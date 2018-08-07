@@ -75,14 +75,14 @@ fn is_unix_platform() -> bool {
 }
 ```
 
-[_InnerAttribute_]: attributes.html
-[_Statement_]: statements.html
-[_Expression_]: expressions.html
-[expression]: expressions.html
-[statements]: statements.html
-[value expressions]: expressions.html#place-expressions-and-value-expressions
-[outer attributes]: attributes.html
-[inner attributes]: attributes.html
-[expression statement]: statements.html#expression-statements
-[`cfg`]: attributes.html#conditional-compilation
-[the lint check attributes]: attributes.html#lint-check-attributes
+[_InnerAttribute_]: ../attributes.html
+[_Statement_]: ../statements.html
+[_Expression_]: ../expressions.html
+[expression]: ../expressions.html
+[statements]: ../statements.html
+[value expressions]: ../expressions.html#place-expressions-and-value-expressions
+[outer attributes]: ../attributes.html
+[inner attributes]: ../attributes.html
+[expression statement]: ../statements.html#expression-statements
+[`cfg`]: ../attributes.html#conditional-compilation
+[the lint check attributes]: ../attributes.html#lint-check-attributes

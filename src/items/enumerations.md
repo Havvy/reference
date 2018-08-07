@@ -131,16 +131,16 @@ no valid values, they cannot be instantiated.
 enum ZeroVariants {}
 ```
 
-[IDENTIFIER]: identifiers.html
-[_Generics_]: items/generics.html
-[_WhereClause_]: items/generics.html#where-clauses
-[_Expression_]: expressions.html
-[_TupleFields_]: items/structs.html
-[_StructFields_]: items/structs.html
-[enumerated type]: types.html#enumerated-types
-[`mem::discriminant`]: ../std/mem/fn.discriminant.html
-[numeric cast]: expressions/operator-expr.html#semantics
-[`repr` attribute]: attributes.html#ffi-attributes
-[default representation]: type-layout.html#the-default-representation
-[primitive representation]: type-layout.html#primitive-representations
-[`C` representation]: type-layout.html#the-c-representation
+[IDENTIFIER]: ../identifiers.html
+[_Generics_]: generics.html
+[_WhereClause_]: generics.html#where-clauses
+[_Expression_]: ../expressions.html
+[_TupleFields_]: structs.html
+[_StructFields_]: structs.html
+[enumerated type]: ../types.html#enumerated-types
+[`mem::discriminant`]: ../../std/mem/fn.discriminant.html
+[numeric cast]: ../expressions/operator-expr.html#semantics
+[`repr` attribute]: ../attributes.html#ffi-attributes
+[default representation]: ../type-layout.html#the-default-representation
+[primitive representation]: ../type-layout.html#primitive-representations
+[`C` representation]: ../type-layout.html#the-c-representation

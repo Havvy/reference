@@ -68,10 +68,8 @@ mod thread {
 }
 ```
 
-[IDENTIFIER]: identifiers.html
-
-[_InnerAttribute_]: attributes.html
-[_OuterAttribute_]: attributes.html
-
-[_Item_]: items.html
-[items]: items.html
+[IDENTIFIER]: ../identifiers.html
+[_InnerAttribute_]: ../attributes.html
+[_OuterAttribute_]: ../attributes.html
+[_Item_]: ../items.html
+[items]: ../items.html

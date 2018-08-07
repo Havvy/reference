@@ -64,7 +64,7 @@ let mut array = [-2, 3, 9];
 }
 ```
 
-Even though `&&` is a single token ([the lazy 'and' operator](#lazy-boolean-operators)),
+Even though `&&` is a single token ([the lazy 'and' operator][lazy operators]),
 when used in the context of borrow expressions it works as two borrows:
 
 ```rust
@@ -385,9 +385,6 @@ same trait object.
 * `u8` to `char` cast
     * Casts to the `char` with the corresponding code point.
 
-[float-int]: https://github.com/rust-lang/rust/issues/10184
-[float-float]: https://github.com/rust-lang/rust/issues/15536
-
 ## Assignment expressions
 
 > **<sup>Syntax</sup>**\
@@ -398,9 +395,9 @@ An _assignment expression_ consists of a [place expression] followed by an
 equals sign (`=`) and a [value expression]. Such an expression always has
 the [`unit` type].
 
-Evaluating an assignment expression [drops](destructors.html) the left-hand
+Evaluating an assignment expression [drops] the left-hand
 operand, unless it's an uninitialized local variable or field of a local variable,
-and [either copies or moves](expressions.html#moved-and-copied-types) its
+and [either copies or moves] its
 right-hand operand to its left-hand operand. The left-hand operand must be a
 place expression: using a value expression results in a compiler error, rather
 than promoting it to a temporary.
@@ -441,13 +438,12 @@ x += 4;
 assert_eq!(x, 14);
 ```
 
-[place expression]: expressions.html#place-expressions-and-value-expressions
-[value expression]: expressions.html#place-expressions-and-value-expressions
-[temporary value]: expressions.html#temporary-lifetimes
+[place expression]: ../expressions.html#place-expressions-and-value-expressions
+[value expression]: ../expressions.html#place-expressions-and-value-expressions
+[temporary value]: ../expressions.html#temporary-lifetimes
 [float-int]: https://github.com/rust-lang/rust/issues/10184
 [float-float]: https://github.com/rust-lang/rust/issues/15536
-[`unit` type]: types.html#tuple-types
-
+[`unit` type]: ../types.html#tuple-types
 [_BorrowExpression_]: #borrow-operators
 [_DereferenceExpression_]: #the-dereference-operator
 [_ErrorPropagationExpression_]: #the-question-mark-operator
@@ -458,6 +454,10 @@ assert_eq!(x, 14);
 [_TypeCastExpression_]: #type-cast-expressions
 [_AssignmentExpression_]: #assignment-expressions
 [_CompoundAssignmentExpression_]: #compound-assignment-expressions
-
-[_Expression_]: expressions.html
-[_PathInExpression_]: paths.html
+[_Expression_]: ../expressions.html
+[_PathInExpression_]: ../paths.html
+[lazy operators]: #lazy-boolean-operators
+[drops]: ../destructors.html
+[either copies or moves]: ../expressions.html#moved-and-copied-types
+[float-int]: https://github.com/rust-lang/rust/issues/10184
+[float-float]: https://github.com/rust-lang/rust/issues/15536

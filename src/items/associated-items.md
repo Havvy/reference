@@ -4,11 +4,7 @@
 [implementations]. They are called this because they are defined on an associate
 type &mdash; the type in the implementation. They are a subset of the kinds of
 items you can declare in a module. Specifically, there are [associated
-functions] (including methods), [associated types], and [associated constants].
-
-[associated functions]: #associated-functions-and-methods
-[associated types]: #associated-types
-[associated constants]: #associated-constants
+functions] \(including methods), [associated types], and [associated constants].
 
 Associated items are useful when the associated item logically is related to the
 associating item. For example, the `is_some` method on `Option` is intrinsically
@@ -268,18 +264,21 @@ fn main() {
 }
 ```
 
-[trait]: items/traits.html
-[traits]: items/traits.html
-[type aliases]: items/type-aliases.html
-[inherent implementations]: items/implementations.html#inherent-implementations
-[identifier]: identifiers.html
-[trait object]: types.html#trait-objects
-[implementations]: items/implementations.html
-[type]: types.html
-[constants]: items/constant-items.html
-[constant item]: items/constant-items.html
-[functions]: items/functions.html
-[function item]: types.html#function-item-types
-[method call operator]: expressions/method-call-expr.html
-[block]: expressions/block-expr.html
-[path]: paths.html
+[trait]: traits.html
+[traits]: traits.html
+[type aliases]: type-aliases.html
+[inherent implementations]: implementations.html#inherent-implementations
+[identifier]: ../identifiers.html
+[trait object]: ../types.html#trait-objects
+[implementations]: implementations.html
+[type]: ../types.html
+[constants]: constant-items.html
+[constant item]: constant-items.html
+[functions]: functions.html
+[function item]: ../types.html#function-item-types
+[method call operator]: ../expressions/method-call-expr.html
+[block]: ../expressions/block-expr.html
+[path]: ../paths.html
+[associated functions]: #associated-functions-and-methods
+[associated types]: #associated-types
+[associated constants]: #associated-constants

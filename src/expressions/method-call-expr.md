@@ -5,7 +5,7 @@ dot, an [identifier], and a parenthesized expression-list. Method calls are
 resolved to associated [methods] on specific traits, either statically
 dispatching to a method if the exact `self`-type of the left-hand-side is known,
 or dynamically dispatching if the left-hand-side expression is an indirect
-[trait object](types.html#trait-objects).
+[trait object].
 
 ```rust
 let pi: Result<f32, _> = "3.14".parse();
@@ -93,12 +93,13 @@ method and you'll be fine.
 
 </div>
 
-[IDENTIFIER]: identifiers.html
-[visible]: visibility-and-privacy.html
-[array]: types.html#array-and-slice-types
-[trait objects]: types.html#trait-objects
-[disambiguate call]: expressions/call-expr.html#disambiguating-function-calls
-[disambiguating function call syntax]: expressions/call-expr.html#disambiguating-function-calls
-[dereference]: expressions/operator-expr.html#the-dereference-operator
-[methods]: items/associated-items.html#methods
-[unsized coercion]: type-coercions.html#unsized-coercions
+[IDENTIFIER]: ../identifiers.html
+[visible]: ../visibility-and-privacy.html
+[array]: ../types.html#array-and-slice-types
+[trait objects]: ../types.html#trait-objects
+[disambiguate call]: call-expr.html#disambiguating-function-calls
+[disambiguating function call syntax]: call-expr.html#disambiguating-function-calls
+[dereference]: operator-expr.html#the-dereference-operator
+[methods]: ../items/associated-items.html#methods
+[unsized coercion]: ../type-coercions.html#unsized-coercions
+[trait object]: ../types.html#trait-objects

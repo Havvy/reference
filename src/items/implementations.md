@@ -144,9 +144,9 @@ attributes must come before any associated items. That attributes that have
 meaning here are [`cfg`], [`deprecated`], [`doc`], and [the lint check
 attributes].
 
-[trait]: items/traits.html
-[attributes]: attributes.html
-[`cfg`]: attributes.html#conditional-compilation
-[`deprecated`]: attributes.html#deprecation
-[`doc`]: attributes.html#documentation
-[the lint check attributes]: attributes.html#lint-check-attributes
+[trait]: traits.html
+[attributes]: ../attributes.html
+[`cfg`]: ../attributes.html#conditional-compilation
+[`deprecated`]: ../attributes.html#deprecation
+[`doc`]: ../attributes.html#documentation
+[the lint check attributes]: ../attributes.html#lint-check-attributes

@@ -3,9 +3,9 @@
 A _trait_ describes an abstract interface that types can implement. This
 interface consists of [associated items], which come in three varieties:
 
-- [functions](items/associated-items.html#associated-functions-and-methods)
-- [types](items/associated-items.html#associated-types)
-- [constants](items/associated-items.html#associated-constants)
+- [functions]
+- [types]
+- [constants]
 
 All traits define an implicit type parameter `Self` that refers to "the type
 that is implementing this interface". Traits may also contain additional type
@@ -115,13 +115,16 @@ let circle = Box::new(circle) as Box<dyn Circle>;
 let nonsense = circle.radius() * circle.area();
 ```
 
-[bounds]: trait-bounds.html
-[trait object]: types.html#trait-objects
-[explicit]: expressions/operator-expr.html#type-cast-expressions
+[bounds]: ../trait-bounds.html
+[trait object]: ../types.html#trait-objects
+[explicit]: ../expressions/operator-expr.html#type-cast-expressions
 [RFC 255]: https://github.com/rust-lang/rfcs/blob/master/text/0255-object-safety.md
-[associated items]: items/associated-items.html
-[method]: items/associated-items.html#methods
-[implementations]: items/implementations.html
-[generics]: items/generics.html
-[where clauses]: items/generics.html#where-clauses
-[generic functions]: items/functions.html#generic-functions
+[associated items]: associated-items.html
+[method]: associated-items.html#methods
+[implementations]: implementations.html
+[generics]: generics.html
+[where clauses]: generics.html#where-clauses
+[generic functions]: functions.html#generic-functions
+[functions]: associated-items.html#associated-functions-and-methods
+[types]: associated-items.html#associated-types
+[constants]: associated-items.html#associated-constants

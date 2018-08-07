@@ -1,14 +1,14 @@
 # Struct expressions
 
 There are several forms of struct expressions. A _struct expression_ consists
-of the [path] of a [struct item](items/structs.html), followed by a
+of the [path] of a [struct item], followed by a
 brace-enclosed list of zero or more comma-separated name-value pairs, providing
 the field values of a new instance of the struct. A field name can be any
 [identifier], and is separated from its value expression by a
 colon. In the case of a tuple struct the field names are numbers corresponding
 to the position of the field. The numbers must be written in decimal,
 containing no underscores and with no leading zeros or integer suffix. A value
-of a [union](items/unions.html) type can also be created using this syntax,
+of a [union] type can also be created using this syntax,
 except that it must specify exactly one field.
 
 Struct expressions can't be used directly in the head of a [loop]
@@ -48,7 +48,7 @@ entire expression denotes the result of constructing a new struct (with the
 same type as the base expression) with the given values for the fields that
 were explicitly specified and the values in the base expression for all other
 fields. Just as with all struct expressions, all of the fields of the struct
-must be [visible](visibility-and-privacy.html), even those not explicitly
+must be [visible], even those not explicitly
 named.
 
 ```rust
@@ -74,9 +74,12 @@ Point3d { x: x, y: y_value, z: z };
 Point3d { x, y: y_value, z };
 ```
 
-[IDENTIFIER]: identifiers.html
-[path]: paths.html
-[loop]: expressions/loop-expr.html
-[if]: expressions/if-expr.html#if-expressions
-[if let]: expressions/if-expr.html#if-let-expressions
-[match]: expressions/match-expr.html
+[IDENTIFIER]: ../identifiers.html
+[path]: ../paths.html
+[loop]: loop-expr.html
+[if]: if-expr.html#if-expressions
+[if let]: if-expr.html#if-let-expressions
+[match]: match-expr.html
+[struct item]: ../items/structs.html
+[visible]: ../visibility-and-privacy.html
+[union]: ../items/unions.html

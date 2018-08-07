@@ -100,26 +100,23 @@ generic parameter.
 }
 ```
 
-[IDENTIFIER]: identifiers.html
-[LIFETIME_OR_LABEL]: tokens.html#lifetimes-and-loop-labels
-
-[_LifetimeBounds_]: trait-bounds.html
-[_Lifetime_]: trait-bounds.html
-[_OuterAttribute_]: attributes.html
-[_Type_]: types.html
-[_TypeParamBounds_]: trait-bounds.html
-
-[arrays]: types.html#array-and-slice-types
-[function pointers]: types.html#function-pointer-types
-[references]: types.html#shared-references-
-[raw pointers]: types.html#raw-pointers-const-and-mut
-[`Clone`]: special-types-and-traits.html#clone
-[`Copy`]: special-types-and-traits.html#copy
-[`Sized`]: special-types-and-traits.html#sized
-[tuples]: types.html#tuple-types
-[trait object]: types.html#trait-objects
-[attributes]: attributes.html
-
+[IDENTIFIER]: ../identifiers.html
+[LIFETIME_OR_LABEL]: ../tokens.html#lifetimes-and-loop-labels
+[_LifetimeBounds_]: ../trait-bounds.html
+[_Lifetime_]: ../trait-bounds.html
+[_OuterAttribute_]: ../attributes.html
+[_Type_]: ../types.html
+[_TypeParamBounds_]: ../trait-bounds.html
+[arrays]: ../types.html#array-and-slice-types
+[function pointers]: ../types.html#function-pointer-types
+[references]: ../types.html#shared-references-
+[raw pointers]: ../types.html#raw-pointers-const-and-mut
+[`Clone`]: ../special-types-and-traits.html#clone
+[`Copy`]: ../special-types-and-traits.html#copy
+[`Sized`]: ../special-types-and-traits.html#sized
+[tuples]: ../types.html#tuple-types
+[trait object]: ../types.html#trait-objects
+[attributes]: ../attributes.html
 [path]: ../paths.html
-[Trait]: traits.html#trait-bounds
-[_TypePath_]: paths.html
+[Trait]: ../traits.html#trait-bounds
+[_TypePath_]: ../paths.html

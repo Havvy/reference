@@ -35,4 +35,4 @@ assert_eq!( a.f (), "The method f");
 assert_eq!((a.f)(), "The field f");
 ```
 
-[_Expression_]: expressions.html
+[_Expression_]: ../expressions.html

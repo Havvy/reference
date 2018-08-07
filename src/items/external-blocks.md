@@ -23,8 +23,6 @@ extern {
 
 A number of [attributes] control the behavior of external blocks.
 
-[attributes]: attributes.html#ffi-attributes
-
 By default external blocks assume that the library they are calling uses the
 standard C ABI on the specific platform. Other ABIs may be specified using an
 `abi` string, as shown here:
@@ -81,3 +79,5 @@ It is valid to add the `link` attribute on an empty extern block. You can use
 this to satisfy the linking requirements of extern blocks elsewhere in your
 code (including upstream crates) instead of adding the attribute to each extern
 block.
+
+[attributes]: ../attributes.html#ffi-attributes

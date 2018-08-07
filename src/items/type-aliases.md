@@ -10,8 +10,6 @@ declared with the keyword `type`. Every value has a single, specific type, but
 may implement several different traits, or be compatible with several different
 type constraints.
 
-[type]: types.html
-
 For example, the following defines the type `Point` as a synonym for the type
 `(u8, u8)`, the type of pairs of unsigned 8 bit integers:
 
@@ -29,7 +27,8 @@ let _: F = E::A;  // OK
 // let _: F = F::A;  // Doesn't work
 ```
 
-[IDENTIFIER]: identifiers.html
-[_Generics_]: items/generics.html
-[_WhereClause_]: items/generics.html#where-clauses
-[_Type_]: types.html
+[type]: ../types.html
+[IDENTIFIER]: ../identifiers.html
+[_Generics_]: generics.html
+[_WhereClause_]: html#where-clauses
+[_Type_]: ../types.html

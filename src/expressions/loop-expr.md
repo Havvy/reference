@@ -9,23 +9,17 @@
 > &nbsp;&nbsp; &nbsp;&nbsp; | [_IteratorLoopExpression_]\
 > &nbsp;&nbsp; )
 
-[_LoopLabel_]: #loop-labels
-[_InfiniteLoopExpression_]: #infinite-loops
-[_PredicateLoopExpression_]: #predicate-loops
-[_PredicatePatternLoopExpression_]: #predicate-pattern-loops
-[_IteratorLoopExpression_]: #iterator-loops
-
 Rust supports four loop expressions:
 
-*   A [`loop` expression](#infinite-loops) denotes an infinite loop.
-*   A [`while` expression](#predicate-loops) loops until a predicate is false.
-*   A [`while let` expression](#predicate-pattern-loops) tests a refutable pattern.
-*   A [`for` expression](#iterator-loops) extracts values from an iterator,
+*   A [`loop` expression] denotes an infinite loop.
+*   A [`while` expression] loops until a predicate is false.
+*   A [`while let` expression] tests a refutable pattern.
+*   A [`for` expression] extracts values from an iterator,
     looping until the iterator is empty.
 
-All four types of loop support [`break` expressions](#break-expressions),
-[`continue` expressions](#continue-expressions), and [labels](#loop-labels).
-Only `loop` supports [evaluation to non-trivial values](#break-and-loop-values).
+All four types of loop support [`break` expressions],
+[`continue` expressions], and [labels].
+Only `loop` supports [evaluation to non-trivial values][loop values].
 
 ## Infinite loops
 
@@ -37,8 +31,8 @@ A `loop` expression repeats execution of its body continuously:
 `loop { println!("I live."); }`.
 
 A `loop` expression without an associated `break` expression is diverging and
-has type [`!`](types.html#never-type). A `loop` expression containing
-associated [`break` expression(s)](#break-expressions) may terminate, and must
+has type [`!`]. A `loop` expression containing
+associated [`break` expression(s)][`break` expressions] may terminate, and must
 have type compatible with the value of the `break` expression(s).
 
 ## Predicate loops
@@ -129,8 +123,7 @@ a lifetime preceding the loop expression, as in `'foo: loop { break 'foo; }`,
 `'bar: while false {}`, `'humbug: for _ in 0..0 {}`.
 If a label is present, then labeled `break` and `continue` expressions nested
 within this loop may exit out of this loop or return control to its head.
-See [break expressions](#break-expressions) and [continue
-expressions](#continue-expressions).
+See [break expressions] and [continue expressions].
 
 ## `break` expressions
 
@@ -153,7 +146,7 @@ assert_eq!(last, 12);
 ```
 
 A `break` expression is normally associated with the innermost `loop`, `for` or
-`while` loop enclosing the `break` expression, but a [label](#loop-labels) can
+`while` loop enclosing the `break` expression, but a [label][labels] can
 be used to specify which enclosing loop is affected. Example:
 
 ```rust
@@ -165,7 +158,7 @@ be used to specify which enclosing loop is affected. Example:
 ```
 
 A `break` expression is only permitted in the body of a loop, and has one of
-the forms `break`, `break 'label` or ([see below](#break-and-loop-values))
+the forms `break`, `break 'label` or ([see below][loop values])
 `break EXPR` or `break 'label EXPR`.
 
 ## `continue` expressions
@@ -209,9 +202,21 @@ and the `loop` must have a type compatible with each `break` expression.
 `break` without an expression is considered identical to `break` with
 expression `()`.
 
-[IDENTIFIER]: identifiers.html
-
-[_Expression_]:      expressions.html
-[_BlockExpression_]: expressions/block-expr.html
-
-[LIFETIME_OR_LABEL]: tokens.html#lifetimes-and-loop-labels
+[IDENTIFIER]: ../identifiers.html
+[_Expression_]: ../expressions.html
+[_BlockExpression_]: block-expr.html
+[LIFETIME_OR_LABEL]: ../tokens.html#lifetimes-and-loop-labels
+[_LoopLabel_]: #loop-labels
+[_InfiniteLoopExpression_]: #infinite-loops
+[_PredicateLoopExpression_]: #predicate-loops
+[_PredicatePatternLoopExpression_]: #predicate-pattern-loops
+[_IteratorLoopExpression_]: #iterator-loops
+[`loop` expression]: #infinite-loops
+[`while` expression]: #predicate-loops
+[`while let` expression`]: #predicate-pattern-loops
+[`for` expression]: #iterator-loops
+[`break` expressions]: #break-expressions
+[`continue` expressions]: #continue-expressions
+[labels]: #loop-labels
+[loop values]: #break-and-loop-values
+[`!`]: ../types.html#never-type

@@ -201,14 +201,14 @@ let message = match maybe_digit {
 Outer attributes are allowed on match arms. The only attributes that have
 meaning on match arms are [`cfg`], `cold`, and the [lint check attributes].
 
-[_Expression_]: expressions.html
-[_BlockExpression_]: expressions/block-expr.html#block-expressions
-[place expression]: expressions.html#place-expressions-and-value-expressions
-[value expression]: expressions.html#place-expressions-and-value-expressions
-[`char`]: types.html#textual-types
-[numeric types]: types.html#numeric-types
-[_InnerAttribute_]: attributes.html
-[_OuterAttribute_]: attributes.html
-[`cfg`]: attributes.html#conditional-compilation
-[lint check attributes]: attributes.html#lint-check-attributes
-[range]: expressions/range-expr.html
+[_Expression_]: ../expressions.html
+[_BlockExpression_]: block-expr.html#block-expressions
+[place expression]: ../expressions.html#place-expressions-and-value-expressions
+[value expression]: ../expressions.html#place-expressions-and-value-expressions
+[`char`]: ../types.html#textual-types
+[numeric types]: ../types.html#numeric-types
+[_InnerAttribute_]: ../attributes.html
+[_OuterAttribute_]: ../attributes.html
+[`cfg`]: ../attributes.html#conditional-compilation
+[lint check attributes]: ../attributes.html#lint-check-attributes
+[range]: range-expr.html

@@ -143,9 +143,10 @@ generics, trait implementations, inherent implementations, coherence, pattern
 checking, etc etc etc).
 
 More detailed specification for unions, including unstable bits, can be found
-in [RFC 1897 "Unions v1.2"](https://github.com/rust-lang/rfcs/pull/1897).
+in [RFC 1897 "Unions v1.2"].
 
-[IDENTIFIER]: identifiers.html
-[_Generics_]: items/generics.html
-[_WhereClause_]: items/generics.html#where-clauses
-[_StructFields_]: items/structs.html
+[RFC 1897 "Unions v1.2"]: https://github.com/rust-lang/rfcs/pull/1897
+[IDENTIFIER]: ../identifiers.html
+[_Generics_]: html
+[_WhereClause_]: html#where-clauses
+[_StructFields_]: html

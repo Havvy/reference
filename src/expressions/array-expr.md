@@ -8,19 +8,16 @@
 > &nbsp;&nbsp; | `[` [_Expression_] ( `,` [_Expression_] )<sup>\*</sup> `,`<sup>?</sup> `]`\
 > &nbsp;&nbsp; | `[` [_Expression_] `;` [_Expression_] `]`
 
-An _[array](types.html#array-and-slice-types) expression_ can be written by
-enclosing zero or more comma-separated expressions of uniform type in square
-brackets. This produces and array containing each of these values in the
-order they are written.
+An _[array] expression_ can be written by enclosing zero or more comma-separated
+expressions of uniform type in square brackets. This produces and array
+containing each of these values in the order they are written.
 
 Alternatively there can be exactly two expressions inside the brackets,
 separated by a semi-colon. The expression after the `;` must be a have type
-`usize` and be a [constant expression](expressions.html#constant-expressions),
-such as a [literal](tokens.html#literals) or a [constant
-item](items/constant-items.html). `[a; b]` creates an array containing `b`
-copies of the value of `a`. If the expression after the semi-colon has a value
-greater than 1 then this requires that the type of `a` is
-[`Copy`](special-types-and-traits.html#copy).
+`usize` and be a [constant expression], such as a [literal] or a [constant
+item]. `[a; b]` creates an array containing `b` copies of the value of `a`. If
+the expression after the semi-colon has a value greater than 1 then this
+requires that the type of `a` is [`Copy`].
 
 ```rust
 [1, 2, 3, 4];
@@ -34,9 +31,8 @@ greater than 1 then this requires that the type of `a` is
 
 > **<sup>Syntax</sup>**\
 > _IndexExpression_ :\
-> &nbsp;&nbsp; [_Expression_] `[` [_Expression_] `]`
 
-[Array and slice](types.html#array-and-slice-types)-typed expressions can be
+[Array and slice]-typed expressions can be
 indexed by writing a square-bracket-enclosed expression of type `usize` (the
 index) after them. When the array is mutable, the resulting [memory location]
 can be assigned to.
@@ -71,10 +67,15 @@ arr[10];                  // warning: index out of bounds
 ```
 
 The array index expression can be implemented for types other than arrays and slices
-by implementing the [Index] and [IndexMut] traits.
+by implementing the [`Index`] and [`IndexMut`] traits.
 
-[_Expression_]: expressions.html
-[memory location]: expressions.html#place-expressions-and-value-expressions
-[Index]: ../std/ops/trait.Index.html
-[IndexMut]: ../std/ops/trait.IndexMut.html
-[constant expression]: expressions.html#constant-expressions
+[_Expression_]: /expressions.html
+[memory location]: /expressions.html#place-expressions-and-value-expressions
+[`Index`]: ../../std/ops/trait.Index.html
+[`IndexMut`]: ../../std/ops/trait.IndexMut.html
+[constant expression]: ../expressions.html#constant-expressions
+[literal]: ../tokens.html#literals
+[Array and slice]: ../types.html#array-and-slice-types
+[constant item]: ../items/constant-items.htm
+[`Copy`]: ../special-types-and-traits.html#copy
+[array]: ../types.html#array-and-slice-types
