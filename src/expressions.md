@@ -233,7 +233,7 @@ Implicit borrows may be taken in the following expressions:
 
 Certain types of expressions can be evaluated at compile time. These are called
 _constant expressions_. Certain places, such as in
-[constants] and [statics](static variables),
+[constants] and [statics][static variables],
 require a constant expression, and are always evaluated at compile time. In
 other places, such as in [`let` statements][let],
 constant expressions may be evaluated at compile time. If errors, such as out

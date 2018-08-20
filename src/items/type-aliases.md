@@ -30,5 +30,5 @@ let _: F = E::A;  // OK
 [IDENTIFIER]: ../identifiers.html
 [_Generics_]: generics.html
 [_Type_]: ../types.html
-[_WhereClause_]: html#where-clauses
+[_WhereClause_]: generics.html#where-clauses
 [type]: ../types.html

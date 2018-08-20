@@ -147,6 +147,6 @@ in [RFC 1897 "Unions v1.2"].
 
 [IDENTIFIER]: ../identifiers.html
 [RFC 1897 "Unions v1.2"]: https://github.com/rust-lang/rfcs/pull/1897
-[_Generics_]: html
-[_StructFields_]: html
-[_WhereClause_]: html#where-clauses
+[_Generics_]: generics.html
+[_StructFields_]: structs.html
+[_WhereClause_]: generics.html#where-clauses

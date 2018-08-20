@@ -42,7 +42,6 @@ which sub-item declarations may appear.
 [function definitions]: items/functions.html
 [implementations]: items/implementations.html
 [modules]: items/modules.html
-[modules]: items/modules.html
 [paths]: paths.html
 [static items]: items/static-items.html
 [struct definitions]: items/structs.html

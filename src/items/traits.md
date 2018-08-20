@@ -3,9 +3,9 @@
 A _trait_ describes an abstract interface that types can implement. This
 interface consists of [associated items], which come in three varieties:
 
-- [functions]
-- [types]
-- [constants]
+- [functions][associated functions]
+- [types][associated types]
+- [constants][associated constants]
 
 All traits define an implicit type parameter `Self` that refers to "the type
 that is implementing this interface". Traits may also contain additional type
@@ -116,15 +116,15 @@ let nonsense = circle.radius() * circle.area();
 ```
 
 [RFC 255]: https://github.com/rust-lang/rfcs/blob/master/text/0255-object-safety.md
+[associated constants]: associated-items.html#associated-constants
 [associated items]: associated-items.html
+[associated functions]: associated-items.html#associated-functions-and-methods
+[associated types]: associated-items.html#associated-types
 [bounds]: ../trait-bounds.html
-[constants]: associated-items.html#associated-constants
 [explicit]: ../expressions/operator-expr.html#type-cast-expressions
-[functions]: associated-items.html#associated-functions-and-methods
 [generic functions]: functions.html#generic-functions
 [generics]: generics.html
 [implementations]: implementations.html
 [method]: associated-items.html#methods
 [trait object]: ../types.html#trait-objects
-[types]: associated-items.html#associated-types
 [where clauses]: generics.html#where-clauses

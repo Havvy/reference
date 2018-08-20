@@ -70,7 +70,7 @@ The array index expression can be implemented for types other than arrays and sl
 by implementing the [`Index`] and [`IndexMut`] traits.
 
 [Array and slice]: ../types.html#array-and-slice-types
-[_Expression_]: /expressions.html
+[_Expression_]: ../expressions.html
 [`Copy`]: ../special-types-and-traits.html#copy
 [`IndexMut`]: ../../std/ops/trait.IndexMut.html
 [`Index`]: ../../std/ops/trait.Index.html
