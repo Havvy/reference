@@ -1,8 +1,11 @@
 # Linkage
 
-The Rust compiler supports various methods to link crates together both
+> Note: This section is described more in terms of the compiler than of
+> the language.
+
+The compiler supports various methods to link crates together both
 statically and dynamically. This section will explore the various methods to
-link Rust crates together, and more information about native libraries can be
+link crates together, and more information about native libraries can be
 found in the [FFI section of the book][ffi].
 
 [ffi]: ../book/ffi.html
@@ -62,10 +65,11 @@ be ignored in favor of only building the artifacts specified by command line.
   compiler will recognize the output artifacts as a macro and it can be loaded
   for a program. If a crate is compiled with the `proc-macro` crate type it
   will forbid exporting any items in the crate other than those functions
-  tagged `#[proc_macro_derive]` and those functions must also be placed at the
-  crate root. Finally, the compiler will automatically set the
-  `cfg(proc_macro)` annotation whenever any crate type of a compilation is the
-  `proc-macro` crate type.
+  tagged `#[proc_macro_derive]` or `#[proc_macro_attribute]` and those functions
+  must also be placed at the crate root. The functions themselves will not be
+  exported, only the macros that they define. Finally, the compiler will
+  automatically set the `cfg(proc_macro)` annotation whenever any crate type of
+  a compilation is the `proc-macro` crate type.
 
 Note that these outputs are stackable in the sense that if multiple are
 specified, then the compiler will produce each form of output at once without

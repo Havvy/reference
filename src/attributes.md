@@ -83,8 +83,24 @@ fn some_unused_variables() {
 }
 ```
 
+Broadly speaking, there are two kinds of attributes: built-in attributes and
+custom attributes. *Built-in attributes* are attributes that are implemented by
+the compiler and whose behaviour is mostly static. *Custom attributes* are
+attributes that are implemented by [procedural macros] and are executed in
+order until no custom attributes exist on the thing they apply to. The `cfg` and
+`test` built-in attributes are the exceptions to being static attributes. They
+apply their effect of removing or keeping code before procedural macros are ran.
+Custom attributes may contain metaitems surrounded by parenthesis. For example,
+a custom attribute `custom` can be writte as either `#[custom]` or
+`#[custom(...)]` but not as `#[custom = ...]`.
+
+It is an error to have an attribute that does not resolve to either a built-in
+or custom attribute or to use a custom attribute on anything but an item.
+Furthermore, custom attributes cannot be used on [modules].
+
 The rest of this page describes or links to descriptions of which attribute
-names have meaning.
+names have meaning. The crate-only. module-only, and miscellaneous attribute
+sections are being phased out.
 
 ## Crate-only attributes
 
@@ -174,6 +190,10 @@ which can be used to control type layout.
 
 - `no_link` on an `extern crate` — even if we load this crate for macros, don't
   link it into the output.
+
+- `proc_macro_derive` - Define a custom derive [procedural macro].
+
+- `proc_macro_attribute` - Define a custom attribute.
 
 See the [macros section of the first edition of the
 book](../book/first-edition/macros.html#scoping-and-macro-importexport) for more
